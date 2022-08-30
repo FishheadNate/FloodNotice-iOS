@@ -1,0 +1,2372 @@
+[
+  {
+    "id": 1,
+    "nwsId": "DARA4",
+    "waterbody": "Arkansas River",
+    "location": "Dardanelle, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=dara4",
+    "longitude": -93.149444,
+    "latitude": 35.226111
+  },
+  {
+    "id": 2,
+    "nwsId": "LITA4",
+    "waterbody": "Arkansas River",
+    "location": "Little Rock, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=lita4",
+    "longitude": -92.269167,
+    "latitude": 34.749722
+  },
+  {
+    "id": 3,
+    "nwsId": "MORA4",
+    "waterbody": "Arkansas River",
+    "location": "Morrilton, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=mora4",
+    "longitude": -92.731667,
+    "latitude": 35.126944
+  },
+  {
+    "id": 4,
+    "nwsId": "OZGA4",
+    "waterbody": "Arkansas River",
+    "location": "Ozark L/D Tailwater, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=ozga4",
+    "longitude": -93.812778,
+    "latitude": 35.4725
+  },
+  {
+    "id": 5,
+    "nwsId": "TODA4",
+    "waterbody": "Arkansas River",
+    "location": "Toad Suck Lock and Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=toda4",
+    "longitude": -92.539722,
+    "latitude": 35.077222
+  },
+  {
+    "id": 6,
+    "nwsId": "VBUA4",
+    "waterbody": "Arkansas River",
+    "location": "Van Buren, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=vbua4",
+    "longitude": -94.356111,
+    "latitude": 35.431389
+  },
+  {
+    "id": 7,
+    "nwsId": "BKRA4",
+    "waterbody": "Black River",
+    "location": "Black Rock, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=bkra4",
+    "longitude": -91.097778,
+    "latitude": 36.1025
+  },
+  {
+    "id": 8,
+    "nwsId": "CRGA4",
+    "waterbody": "Black River",
+    "location": "Corning, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=crga4",
+    "longitude": -90.541389,
+    "latitude": 36.401944
+  },
+  {
+    "id": 9,
+    "nwsId": "POCA4",
+    "waterbody": "Black River",
+    "location": "Pocahontas, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=poca4",
+    "longitude": -90.970278,
+    "latitude": 36.254167
+  },
+  {
+    "id": 10,
+    "nwsId": "SJOA4",
+    "waterbody": "Buffalo River",
+    "location": "St Joe, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=sjoa4",
+    "longitude": -92.747222,
+    "latitude": 35.983056
+  },
+  {
+    "id": 11,
+    "nwsId": "CPCA4",
+    "waterbody": "Cache River",
+    "location": "Cotton Plant DCP, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=cpca4",
+    "longitude": -91.3225,
+    "latitude": 35.035556
+  },
+  {
+    "id": 12,
+    "nwsId": "EGPA4",
+    "waterbody": "Cache River",
+    "location": "Egypt, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=egpa4",
+    "longitude": -90.933333,
+    "latitude": 35.857778
+  },
+  {
+    "id": 13,
+    "nwsId": "LDCA4",
+    "waterbody": "Cache River",
+    "location": "Little Dixie, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=ldca4",
+    "longitude": -91.339092,
+    "latitude": 35.006667
+  },
+  {
+    "id": 14,
+    "nwsId": "PTTA4",
+    "waterbody": "Cache River",
+    "location": "Patterson, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=ptta4",
+    "longitude": -91.236389,
+    "latitude": 35.269722
+  },
+  {
+    "id": 15,
+    "nwsId": "RVSA4",
+    "waterbody": "Eleven Point River",
+    "location": "Ravenden Springs, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=rvsa4",
+    "longitude": -91.114167,
+    "latitude": 36.346389
+  },
+  {
+    "id": 16,
+    "nwsId": "GRVA4",
+    "waterbody": "Fourche LaFave River",
+    "location": "Gravelly, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=grva4",
+    "longitude": -93.656667,
+    "latitude": 34.8725
+  },
+  {
+    "id": 17,
+    "nwsId": "HUSA4",
+    "waterbody": "Fourche LaFave River",
+    "location": "Houston, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=husa4",
+    "longitude": -92.723333,
+    "latitude": 35.012222
+  },
+  {
+    "id": 18,
+    "nwsId": "NMLA4",
+    "waterbody": "Fourche LaFave River",
+    "location": "Nimrod Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=nmla4",
+    "longitude": -93.161389,
+    "latitude": 34.952222
+  },
+  {
+    "id": 19,
+    "nwsId": "SLSA4",
+    "waterbody": "Illinois River ",
+    "location": "Siloam Springs 4SE / Hwy 16, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=slsa4",
+    "longitude": -94.494722,
+    "latitude": 36.144722
+  },
+  {
+    "id": 20,
+    "nwsId": "SVYA4",
+    "waterbody": "Illinois River ",
+    "location": "Savoy, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=svya4",
+    "longitude": -94.344167,
+    "latitude": 36.110833
+  },
+  {
+    "id": 21,
+    "nwsId": "HJFA4",
+    "waterbody": "James Fork",
+    "location": "Hackett, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=hjfa4",
+    "longitude": -94.406944,
+    "latitude": 35.1625
+  },
+  {
+    "id": 22,
+    "nwsId": "BRYA4",
+    "waterbody": "Kings River",
+    "location": "Berryville, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=brya4",
+    "longitude": -93.620833,
+    "latitude": 36.427222
+  },
+  {
+    "id": 23,
+    "nwsId": "COTA4",
+    "waterbody": "L'Anguille River",
+    "location": "Colt, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=cota4",
+    "longitude": -90.878056,
+    "latitude": 35.144722
+  },
+  {
+    "id": 24,
+    "nwsId": "LAMA4",
+    "waterbody": "L'Anguille River",
+    "location": "Marianna 1 NE, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=lama4",
+    "longitude": -90.751944,
+    "latitude": 34.790278
+  },
+  {
+    "id": 25,
+    "nwsId": "PLGA4",
+    "waterbody": "L'Anguille River",
+    "location": "Palestine, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=plga4",
+    "longitude": -90.884722,
+    "latitude": 34.972778
+  },
+  {
+    "id": 26,
+    "nwsId": "VBRA4",
+    "waterbody": "Lee Creek",
+    "location": "Van Buren LCR, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=vbra4",
+    "longitude": -94.392778,
+    "latitude": 35.483889
+  },
+  {
+    "id": 27,
+    "nwsId": "GRRA4",
+    "waterbody": "Little Red River",
+    "location": "Greers Ferry Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=grra4",
+    "longitude": -91.995,
+    "latitude": 35.520833
+  },
+  {
+    "id": 28,
+    "nwsId": "JUDA4",
+    "waterbody": "Little Red River",
+    "location": "Judsonia, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=juda4",
+    "longitude": -91.639444,
+    "latitude": 35.267778
+  },
+  {
+    "id": 29,
+    "nwsId": "MDEA4",
+    "waterbody": "Little River",
+    "location": "Ditch 81 Up From Ditch 81 Control Structure, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mdea4",
+    "longitude": -90.139167,
+    "latitude": 35.853611
+  },
+  {
+    "id": 30,
+    "nwsId": "MNUA4",
+    "waterbody": "Little River",
+    "location": "Ditch 81, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mnua4",
+    "longitude": -90.121111,
+    "latitude": 35.9925
+  },
+  {
+    "id": 31,
+    "nwsId": "OSGA4",
+    "waterbody": "Mississippi River",
+    "location": "Osceola, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=osga4",
+    "longitude": -89.933056,
+    "latitude": 35.660556
+  },
+  {
+    "id": 32,
+    "nwsId": "MLBA4",
+    "waterbody": "Mulberry River ",
+    "location": "Mulberry, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=mlba4",
+    "longitude": -94.015278,
+    "latitude": 35.576944
+  },
+  {
+    "id": 33,
+    "nwsId": "NFDA4",
+    "waterbody": "Norfork River",
+    "location": "Norfork Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=nfda4",
+    "longitude": -92.237778,
+    "latitude": 36.249167
+  },
+  {
+    "id": 34,
+    "nwsId": "BVGA4",
+    "waterbody": "Northwest Arkansas Lakes",
+    "location": "Beaver Lake, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=bvga4",
+    "longitude": -93.847222,
+    "latitude": 36.420833
+  },
+  {
+    "id": 35,
+    "nwsId": "ELMA4",
+    "waterbody": "Osage Creek",
+    "location": "Elm Springs 3NW, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=elma4",
+    "longitude": -94.288333,
+    "latitude": 36.221944
+  },
+  {
+    "id": 36,
+    "nwsId": "BMTA4",
+    "waterbody": "Petit Jean River",
+    "location": "Blue Mountain Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=bmta4",
+    "longitude": -93.650556,
+    "latitude": 35.101667
+  },
+  {
+    "id": 37,
+    "nwsId": "DANA4",
+    "waterbody": "Petit Jean River",
+    "location": "Danville, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=dana4",
+    "longitude": -93.395555,
+    "latitude": 35.058611
+  },
+  {
+    "id": 38,
+    "nwsId": "RIGA4",
+    "waterbody": "Right Hand Chute Little River",
+    "location": "Rivervale, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=riga4",
+    "longitude": -90.338056,
+    "latitude": 35.671667
+  },
+  {
+    "id": 39,
+    "nwsId": "HDYA4",
+    "waterbody": "Spring River ",
+    "location": "Hardy, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=hdya4",
+    "longitude": -91.482778,
+    "latitude": 36.313611
+  },
+  {
+    "id": 40,
+    "nwsId": "IMBA4",
+    "waterbody": "Spring River ",
+    "location": "Imboden, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=imba4",
+    "longitude": -91.171944,
+    "latitude": 36.205278
+  },
+  {
+    "id": 41,
+    "nwsId": "CDGA4",
+    "waterbody": "St. Francis River",
+    "location": "Cody, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=cdga4",
+    "longitude": -90.636944,
+    "latitude": 34.845278
+  },
+  {
+    "id": 42,
+    "nwsId": "HPGA4",
+    "waterbody": "St. Francis River",
+    "location": "Huxtable, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=hpga4",
+    "longitude": -90.6475,
+    "latitude": 34.734722
+  },
+  {
+    "id": 43,
+    "nwsId": "HUGA4",
+    "waterbody": "St. Francis River",
+    "location": "Hughes, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=huga4",
+    "longitude": -90.583333,
+    "latitude": 34.960556
+  },
+  {
+    "id": 44,
+    "nwsId": "LCRA4",
+    "waterbody": "St. Francis River",
+    "location": "Lake City, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=lcra4",
+    "longitude": -90.4325,
+    "latitude": 35.820833
+  },
+  {
+    "id": 45,
+    "nwsId": "MSFA4",
+    "waterbody": "St. Francis River",
+    "location": "Marianna 2 NE, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=msfa4",
+    "longitude": -90.724722,
+    "latitude": 34.798056
+  },
+  {
+    "id": 46,
+    "nwsId": "MSNA4",
+    "waterbody": "St. Francis River",
+    "location": "Madison, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=msna4",
+    "longitude": -90.719167,
+    "latitude": 35.013056
+  },
+  {
+    "id": 47,
+    "nwsId": "MTOA4",
+    "waterbody": "St. Francis River",
+    "location": "Marked Tree, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mtoa4",
+    "longitude": -90.425278,
+    "latitude": 35.523611
+  },
+  {
+    "id": 48,
+    "nwsId": "PNGA4",
+    "waterbody": "St. Francis River",
+    "location": "Parkin, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=pnga4",
+    "longitude": -90.559167,
+    "latitude": 35.273056
+  },
+  {
+    "id": 49,
+    "nwsId": "RFGA4",
+    "waterbody": "St. Francis River",
+    "location": "Riverfront, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=rfga4",
+    "longitude": -90.682222,
+    "latitude": 35.260278
+  },
+  {
+    "id": 50,
+    "nwsId": "SFRA4",
+    "waterbody": "St. Francis River",
+    "location": "St. Francis, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=sfra4",
+    "longitude": -90.137778,
+    "latitude": 36.455833
+  },
+  {
+    "id": 51,
+    "nwsId": "TWGA4",
+    "waterbody": "Tyronza River",
+    "location": "Twist, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=twga4",
+    "longitude": -90.468333,
+    "latitude": 35.374722
+  },
+  {
+    "id": 52,
+    "nwsId": "TYGA4",
+    "waterbody": "Tyronza River",
+    "location": "Tyronza, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=tyga4",
+    "longitude": -90.38,
+    "latitude": 35.505
+  },
+  {
+    "id": 53,
+    "nwsId": "ALLA4",
+    "waterbody": "White River",
+    "location": "Allison, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=alla4",
+    "longitude": -92.114167,
+    "latitude": 35.939167
+  },
+  {
+    "id": 54,
+    "nwsId": "AUGA4",
+    "waterbody": "White River",
+    "location": "Augusta, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=auga4",
+    "longitude": -91.394167,
+    "latitude": 35.294444
+  },
+  {
+    "id": 55,
+    "nwsId": "BAGA4",
+    "waterbody": "White River",
+    "location": "Batesville, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=baga4",
+    "longitude": -91.641111,
+    "latitude": 35.760278
+  },
+  {
+    "id": 56,
+    "nwsId": "BSGA4",
+    "waterbody": "White River",
+    "location": "Bull Shoals Dam, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=bsga4",
+    "longitude": -92.578056,
+    "latitude": 36.364722
+  },
+  {
+    "id": 57,
+    "nwsId": "CLDA4",
+    "waterbody": "White River",
+    "location": "Clarendon, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=clda4",
+    "longitude": -91.315278,
+    "latitude": 34.685556
+  },
+  {
+    "id": 58,
+    "nwsId": "CLRA4",
+    "waterbody": "White River",
+    "location": "Calico Rock, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=clra4",
+    "longitude": -92.143056,
+    "latitude": 36.116111
+  },
+  {
+    "id": 59,
+    "nwsId": "DSCA4",
+    "waterbody": "White River",
+    "location": "Des Arc, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=dsca4",
+    "longitude": -91.4925,
+    "latitude": 34.976667
+  },
+  {
+    "id": 60,
+    "nwsId": "FYGA4",
+    "waterbody": "White River",
+    "location": "Fayetteville, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=fyga4",
+    "longitude": -94.081111,
+    "latitude": 36.073056
+  },
+  {
+    "id": 61,
+    "nwsId": "GEOA4",
+    "waterbody": "White River",
+    "location": "Georgetown, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=geoa4",
+    "longitude": -91.449722,
+    "latitude": 35.128889
+  },
+  {
+    "id": 62,
+    "nwsId": "NPTA4",
+    "waterbody": "White River",
+    "location": "Newport, AR",
+    "state": "AR",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lzk&gage=npta4",
+    "longitude": -91.288889,
+    "latitude": 35.605278
+  },
+  {
+    "id": 63,
+    "nwsId": "ARCK1",
+    "waterbody": "Arkansas River",
+    "location": "Arkansas City, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=arck1",
+    "longitude": -97.039166,
+    "latitude": 37.0375
+  },
+  {
+    "id": 64,
+    "nwsId": "MULK1",
+    "waterbody": "Arkansas River",
+    "location": "Mulvane, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=mulk1",
+    "longitude": -97.2613,
+    "latitude": 37.4755
+  },
+  {
+    "id": 65,
+    "nwsId": "OXFK1",
+    "waterbody": "Arkansas River",
+    "location": "Oxford, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=oxfk1",
+    "longitude": -97.162914,
+    "latitude": 37.274486
+  },
+  {
+    "id": 66,
+    "nwsId": "BIGK1",
+    "waterbody": "Big Hill Creek",
+    "location": "Big Hill Lake, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=bigk1",
+    "longitude": -95.47,
+    "latitude": 37.27
+  },
+  {
+    "id": 67,
+    "nwsId": "ECLK1",
+    "waterbody": "Elk River ",
+    "location": "Elk City Lake, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=eclk1",
+    "longitude": -95.77694,
+    "latitude": 37.2775
+  },
+  {
+    "id": 68,
+    "nwsId": "ELFK1",
+    "waterbody": "Elk River ",
+    "location": "Elk Falls, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=elfk1",
+    "longitude": -96.185278,
+    "latitude": 37.375556
+  },
+  {
+    "id": 69,
+    "nwsId": "FRNK1",
+    "waterbody": "Fall River ",
+    "location": "Fredonia, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=frnk1",
+    "longitude": -95.833333,
+    "latitude": 37.508333
+  },
+  {
+    "id": 70,
+    "nwsId": "MCNK1",
+    "waterbody": "Lightning Creek ",
+    "location": "McCune, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=mcnk1",
+    "longitude": -95.0325,
+    "latitude": 37.28111
+  },
+  {
+    "id": 71,
+    "nwsId": "EREK1",
+    "waterbody": "Neosho River",
+    "location": "Erie, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=erek1",
+    "longitude": -95.264444,
+    "latitude": 37.549444
+  },
+  {
+    "id": 72,
+    "nwsId": "NSOK1",
+    "waterbody": "Neosho River",
+    "location": "Oswego, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=nsok1",
+    "longitude": -95.062778,
+    "latitude": 37.165
+  },
+  {
+    "id": 73,
+    "nwsId": "OSWK1",
+    "waterbody": "Neosho River",
+    "location": "Oswego, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=oswk1",
+    "longitude": -95.105,
+    "latitude": 37.17666
+  },
+  {
+    "id": 74,
+    "nwsId": "PPFK1",
+    "waterbody": "Neosho River",
+    "location": "Parsons, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=ppfk1",
+    "longitude": -95.10997,
+    "latitude": 37.34006
+  },
+  {
+    "id": 75,
+    "nwsId": "BXTK1",
+    "waterbody": "Spring River",
+    "location": "Baxter Springs, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=bxtk1",
+    "longitude": -94.72083,
+    "latitude": 37.02361
+  },
+  {
+    "id": 76,
+    "nwsId": "ATOK1",
+    "waterbody": "Verdigris River",
+    "location": "Altoona, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=atok1",
+    "longitude": -95.6744,
+    "latitude": 37.52977
+  },
+  {
+    "id": 77,
+    "nwsId": "CFVK1",
+    "waterbody": "Verdigris River",
+    "location": "Coffeyville, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=cfvk1",
+    "longitude": -95.634722,
+    "latitude": 37.061388
+  },
+  {
+    "id": 78,
+    "nwsId": "IDPK1",
+    "waterbody": "Verdigris River",
+    "location": "Independence, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=idpk1",
+    "longitude": -95.6775,
+    "latitude": 37.2236
+  },
+  {
+    "id": 79,
+    "nwsId": "ARKK1",
+    "waterbody": "Walnut River",
+    "location": "Arkansas City, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=arkk1",
+    "longitude": -97.02555,
+    "latitude": 37.05638
+  },
+  {
+    "id": 80,
+    "nwsId": "WFDK1",
+    "waterbody": "Walnut River",
+    "location": "Winfield, KS",
+    "state": "KS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=ict&gage=wfdk1",
+    "longitude": -96.99583,
+    "latitude": 37.22388
+  },
+  {
+    "id": 81,
+    "nwsId": "BRBM7",
+    "waterbody": "Beaver Creek ",
+    "location": "Bradleyville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=brbm7",
+    "longitude": -92.90728,
+    "latitude": 36.77964
+  },
+  {
+    "id": 82,
+    "nwsId": "SABM7",
+    "waterbody": "Big Creek ",
+    "location": "Big Creek at Sam A Baker State Park, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=sabm7",
+    "longitude": -90.506389,
+    "latitude": 37.261111
+  },
+  {
+    "id": 83,
+    "nwsId": "VBSM7",
+    "waterbody": "Big Spring River",
+    "location": "Big Spring near Van Buren, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=vbsm7",
+    "longitude": -90.991944,
+    "latitude": 36.950833
+  },
+  {
+    "id": 84,
+    "nwsId": "BSGM7",
+    "waterbody": "Big Sugar Creek",
+    "location": "Powell, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=bsgm7",
+    "longitude": -94.18222,
+    "latitude": 36.61583
+  },
+  {
+    "id": 85,
+    "nwsId": "ANNM7",
+    "waterbody": "Black River",
+    "location": "Annapolis, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=annm7",
+    "longitude": -90.788611,
+    "latitude": 37.336111
+  },
+  {
+    "id": 86,
+    "nwsId": "CLRM7",
+    "waterbody": "Black River",
+    "location": "Clearwater Lake Pool, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=clrm7",
+    "longitude": -90.775278,
+    "latitude": 37.133333
+  },
+  {
+    "id": 87,
+    "nwsId": "LPRM7",
+    "waterbody": "Black River",
+    "location": "Leeper, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=lprm7",
+    "longitude": -90.686944,
+    "latitude": 37.058611
+  },
+  {
+    "id": 88,
+    "nwsId": "PPBM7",
+    "waterbody": "Black River",
+    "location": "Poplar Bluff, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=ppbm7",
+    "longitude": -90.388056,
+    "latitude": 36.759722
+  },
+  {
+    "id": 89,
+    "nwsId": "WLMM7",
+    "waterbody": "Black River",
+    "location": "Williamsville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=wlmm7",
+    "longitude": -90.596944,
+    "latitude": 36.9725
+  },
+  {
+    "id": 90,
+    "nwsId": "TBCM7",
+    "waterbody": "Bryant Creek",
+    "location": "Tecumseh, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=tbcm7",
+    "longitude": -92.306111,
+    "latitude": 36.627222
+  },
+  {
+    "id": 91,
+    "nwsId": "BCCM7",
+    "waterbody": "Buffalo Creek ",
+    "location": "Tiff City, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=bccm7",
+    "longitude": -94.6039,
+    "latitude": 36.6708
+  },
+  {
+    "id": 92,
+    "nwsId": "BBCM7",
+    "waterbody": "Bull Creek",
+    "location": "Walnut Shade, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=bbcm7",
+    "longitude": -93.206667,
+    "latitude": 36.717778
+  },
+  {
+    "id": 93,
+    "nwsId": "ZCRM7",
+    "waterbody": "Castor River",
+    "location": "Zalma, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=zcrm7",
+    "longitude": -90.075556,
+    "latitude": 37.146667
+  },
+  {
+    "id": 94,
+    "nwsId": "AKFM7",
+    "waterbody": "Current River",
+    "location": "Akers, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=akfm7",
+    "longitude": -91.5528,
+    "latitude": 37.3757
+  },
+  {
+    "id": 95,
+    "nwsId": "DNZM7",
+    "waterbody": "Current River",
+    "location": "Doniphan, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=dnzm7",
+    "longitude": -90.8475,
+    "latitude": 36.621944
+  },
+  {
+    "id": 96,
+    "nwsId": "MSPM7",
+    "waterbody": "Current River",
+    "location": "Montauk State Park, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=mspm7",
+    "longitude": -91.6711,
+    "latitude": 37.4483
+  },
+  {
+    "id": 97,
+    "nwsId": "PWDM7",
+    "waterbody": "Current River",
+    "location": "Powder Mill, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=pwdm7",
+    "longitude": -91.1779,
+    "latitude": 37.1855
+  },
+  {
+    "id": 98,
+    "nwsId": "VNBM7",
+    "waterbody": "Current River",
+    "location": "Van Buren, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=vnbm7",
+    "longitude": -91.013611,
+    "latitude": 36.991389
+  },
+  {
+    "id": 99,
+    "nwsId": "DWEM7",
+    "waterbody": "East Fork Drywood Creek",
+    "location": "Prairie State Park, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=dwem7",
+    "longitude": -94.55805,
+    "latitude": 37.53527
+  },
+  {
+    "id": 100,
+    "nwsId": "EPGM7",
+    "waterbody": "Eleven Point River",
+    "location": "Bardley, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=epgm7",
+    "longitude": -91.20083,
+    "latitude": 36.64861
+  },
+  {
+    "id": 101,
+    "nwsId": "TIFM7",
+    "waterbody": "Elk River ",
+    "location": "Tiff City, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=tifm7",
+    "longitude": -94.58667,
+    "latitude": 36.63139
+  },
+  {
+    "id": 102,
+    "nwsId": "FINM7",
+    "waterbody": "Finley River",
+    "location": "Riverdale, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=finm7",
+    "longitude": -93.32789,
+    "latitude": 36.97489
+  },
+  {
+    "id": 103,
+    "nwsId": "FCRM7",
+    "waterbody": "Flat Creek ",
+    "location": "Jenkins, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=fcrm7",
+    "longitude": -93.6183,
+    "latitude": 36.75056
+  },
+  {
+    "id": 104,
+    "nwsId": "GGRM7",
+    "waterbody": "Greer Spring",
+    "location": "Greer, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=ggrm7",
+    "longitude": -91.3475,
+    "latitude": 36.7866
+  },
+  {
+    "id": 105,
+    "nwsId": "HBBM7",
+    "waterbody": "Hubble Creek",
+    "location": "Dutchtown, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=hbbm7",
+    "longitude": -89.658333,
+    "latitude": 37.231667
+  },
+  {
+    "id": 106,
+    "nwsId": "INCM7",
+    "waterbody": "Indian Creek ",
+    "location": "Lanagan, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=incm7",
+    "longitude": -94.44944,
+    "latitude": 36.59917
+  },
+  {
+    "id": 107,
+    "nwsId": "ALYM7",
+    "waterbody": "Jacks Fork",
+    "location": "Alley Spring, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=alym7",
+    "longitude": -91.44308,
+    "latitude": 37.14817
+  },
+  {
+    "id": 108,
+    "nwsId": "EMCM7",
+    "waterbody": "Jacks Fork",
+    "location": "Eminence, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=emcm7",
+    "longitude": -91.35806,
+    "latitude": 37.15417
+  },
+  {
+    "id": 109,
+    "nwsId": "JKFM7",
+    "waterbody": "Jacks Fork",
+    "location": "Mountain View, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=jkfm7",
+    "longitude": -91.66806,
+    "latitude": 37.05611
+  },
+  {
+    "id": 110,
+    "nwsId": "GLNM7",
+    "waterbody": "James River ",
+    "location": "Galena, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=glnm7",
+    "longitude": -93.461667,
+    "latitude": 36.805278
+  },
+  {
+    "id": 111,
+    "nwsId": "JAMM7",
+    "waterbody": "James River ",
+    "location": "Boaz, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=jamm7",
+    "longitude": -93.36472,
+    "latitude": 37.00667
+  },
+  {
+    "id": 112,
+    "nwsId": "SGFM7",
+    "waterbody": "James River ",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=sgfm7",
+    "longitude": -93.20339,
+    "latitude": 37.14997
+  },
+  {
+    "id": 113,
+    "nwsId": "LBFM7",
+    "waterbody": "Little Black River",
+    "location": "Fairdealing, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=lbfm7",
+    "longitude": -90.575278,
+    "latitude": 36.631667
+  },
+  {
+    "id": 114,
+    "nwsId": "TFDM7",
+    "waterbody": "Little North Fork River",
+    "location": "Thornfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=tfdm7",
+    "longitude": -92.6608,
+    "latitude": 36.7066
+  },
+  {
+    "id": 115,
+    "nwsId": "LRDM7",
+    "waterbody": "Little River Ditch",
+    "location": "Morehouse, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=lrdm7",
+    "longitude": -89.73,
+    "latitude": 36.834167
+  },
+  {
+    "id": 116,
+    "nwsId": "MSZM7",
+    "waterbody": "Little Sac River",
+    "location": "Morrisville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=mszm7",
+    "longitude": -93.48556,
+    "latitude": 37.48278
+  },
+  {
+    "id": 117,
+    "nwsId": "FRZM7",
+    "waterbody": "Little St. Francis River",
+    "location": "Fredericktown, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=frzm7",
+    "longitude": -90.312914,
+    "latitude": 37.559367
+  },
+  {
+    "id": 118,
+    "nwsId": "LSGM7",
+    "waterbody": "Little Sugar Creek",
+    "location": "Pineville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=lsgm7",
+    "longitude": -94.3731,
+    "latitude": 36.5839
+  },
+  {
+    "id": 119,
+    "nwsId": "CPGM7",
+    "waterbody": "Mississippi River",
+    "location": "Cape Girardeau, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=cpgm7",
+    "longitude": -89.518056,
+    "latitude": 37.301944
+  },
+  {
+    "id": 120,
+    "nwsId": "CRTM7",
+    "waterbody": "Mississippi River",
+    "location": "Caruthersville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=crtm7",
+    "longitude": -89.653611,
+    "latitude": 36.194722
+  },
+  {
+    "id": 121,
+    "nwsId": "NMDM7",
+    "waterbody": "Mississippi River",
+    "location": "New Madrid, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=nmdm7",
+    "longitude": -89.53222,
+    "latitude": 36.58306
+  },
+  {
+    "id": 122,
+    "nwsId": "TPTM7",
+    "waterbody": "Mississippi River",
+    "location": "Tiptonville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=tptm7",
+    "longitude": -89.537728,
+    "latitude": 36.412438
+  },
+  {
+    "id": 123,
+    "nwsId": "NFSM7",
+    "waterbody": "North Fork Spring River",
+    "location": "Purcell, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=nfsm7",
+    "longitude": -94.435,
+    "latitude": 37.2589
+  },
+  {
+    "id": 124,
+    "nwsId": "TNZM7",
+    "waterbody": "North Fork White River",
+    "location": "Tecumseh, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=tnzm7",
+    "longitude": -92.248056,
+    "latitude": 36.623056
+  },
+  {
+    "id": 125,
+    "nwsId": "PEAM7",
+    "waterbody": "Pearson Creek",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=peam7",
+    "longitude": -93.19839,
+    "latitude": 37.17794
+  },
+  {
+    "id": 126,
+    "nwsId": "RRSM7",
+    "waterbody": "Roaring River",
+    "location": "Roaring River State Park, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=rrsm7",
+    "longitude": -93.8336,
+    "latitude": 36.5808
+  },
+  {
+    "id": 127,
+    "nwsId": "RCBM7",
+    "waterbody": "Roark Creek",
+    "location": "Branson, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=rcbm7",
+    "longitude": -93.2638,
+    "latitude": 36.6522
+  },
+  {
+    "id": 128,
+    "nwsId": "DDZM7",
+    "waterbody": "Sac River",
+    "location": "Dadeville, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=ddzm7",
+    "longitude": -93.68489,
+    "latitude": 37.44314
+  },
+  {
+    "id": 129,
+    "nwsId": "JOPM7",
+    "waterbody": "Shoal Creek ",
+    "location": "Joplin, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=jopm7",
+    "longitude": -94.51375,
+    "latitude": 37.02058
+  },
+  {
+    "id": 130,
+    "nwsId": "SCRM7",
+    "waterbody": "South Creek",
+    "location": "Springfield ., MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=scrm7",
+    "longitude": -93.3628,
+    "latitude": 37.1536
+  },
+  {
+    "id": 131,
+    "nwsId": "SACM7",
+    "waterbody": "South Fork Dry Sac River",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=sacm7",
+    "longitude": -93.24944,
+    "latitude": 37.2664
+  },
+  {
+    "id": 132,
+    "nwsId": "CHTM7",
+    "waterbody": "Spring River",
+    "location": "Carthage, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=chtm7",
+    "longitude": -94.32583,
+    "latitude": 37.18861
+  },
+  {
+    "id": 133,
+    "nwsId": "SLAM7",
+    "waterbody": "Spring River",
+    "location": "LaRussell, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=slam7",
+    "longitude": -94.0614,
+    "latitude": 37.1503
+  },
+  {
+    "id": 134,
+    "nwsId": "WCOM7",
+    "waterbody": "Spring River",
+    "location": "Waco, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=wcom7",
+    "longitude": -94.56639,
+    "latitude": 37.245556
+  },
+  {
+    "id": 135,
+    "nwsId": "FSKM7",
+    "waterbody": "St. Francis River",
+    "location": "Fisk, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=fskm7",
+    "longitude": -90.200833,
+    "latitude": 36.790278
+  },
+  {
+    "id": 136,
+    "nwsId": "HISM7",
+    "waterbody": "St. Francis River",
+    "location": "Holly Island, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=hism7",
+    "longitude": -90.13,
+    "latitude": 36.236389
+  },
+  {
+    "id": 137,
+    "nwsId": "MLCM7",
+    "waterbody": "St. Francis River",
+    "location": "Mill Creek, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=mlcm7",
+    "longitude": -90.457778,
+    "latitude": 37.5025
+  },
+  {
+    "id": 138,
+    "nwsId": "PAZM7",
+    "waterbody": "St. Francis River",
+    "location": "Patterson, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=pazm7",
+    "longitude": -90.503333,
+    "latitude": 37.194444
+  },
+  {
+    "id": 139,
+    "nwsId": "ROZM7",
+    "waterbody": "St. Francis River",
+    "location": "Roselle, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=rozm7",
+    "longitude": -90.498611,
+    "latitude": 37.595833
+  },
+  {
+    "id": 140,
+    "nwsId": "SAZM7",
+    "waterbody": "St. Francis River",
+    "location": "Saco, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=sazm7",
+    "longitude": -90.473889,
+    "latitude": 37.384444
+  },
+  {
+    "id": 141,
+    "nwsId": "WPPM7",
+    "waterbody": "St. Francis River",
+    "location": "Wappapello Lake Pool, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=pah&gage=wppm7",
+    "longitude": -90.284444,
+    "latitude": 36.928333
+  },
+  {
+    "id": 142,
+    "nwsId": "TCKM7",
+    "waterbody": "Turkey Creek ",
+    "location": "Hollister, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=tckm7",
+    "longitude": -93.2102,
+    "latitude": 36.5827
+  },
+  {
+    "id": 143,
+    "nwsId": "GFZM7",
+    "waterbody": "Turnback Creek",
+    "location": "Greenfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=gfzm7",
+    "longitude": -93.80194,
+    "latitude": 37.4025
+  },
+  {
+    "id": 144,
+    "nwsId": "FORM7",
+    "waterbody": "White River ",
+    "location": "Table Rock Lake, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=form7",
+    "longitude": -93.3097,
+    "latitude": 36.5961
+  },
+  {
+    "id": 145,
+    "nwsId": "PSZM7",
+    "waterbody": "White River ",
+    "location": "Ozark Beach Dam, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=pszm7",
+    "longitude": -93.12583,
+    "latitude": 36.65972
+  },
+  {
+    "id": 146,
+    "nwsId": "SOGM7",
+    "waterbody": "White River ",
+    "location": "School of the Ozarks, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=sogm7",
+    "longitude": -93.2428,
+    "latitude": 36.617222
+  },
+  {
+    "id": 147,
+    "nwsId": "WCCM7",
+    "waterbody": "Wilson Creek",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=wccm7",
+    "longitude": -93.331389,
+    "latitude": 37.18694
+  },
+  {
+    "id": 148,
+    "nwsId": "WCMM7",
+    "waterbody": "Wilson Creek",
+    "location": "Brookline, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=wcmm7",
+    "longitude": -93.37556,
+    "latitude": 37.14722
+  },
+  {
+    "id": 149,
+    "nwsId": "WCRM7",
+    "waterbody": "Wilson Creek",
+    "location": "Springfield, MO",
+    "state": "MO",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=sgf&gage=wcrm7",
+    "longitude": -93.370278,
+    "latitude": 37.168611
+  },
+  {
+    "id": 150,
+    "nwsId": "ARKM6",
+    "waterbody": "Coldwater River",
+    "location": "Arkabutla Dam, MS",
+    "state": "MS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=arkm6",
+    "longitude": -90.124444,
+    "latitude": 34.757222
+  },
+  {
+    "id": 151,
+    "nwsId": "HHSM6",
+    "waterbody": "Coldwater River",
+    "location": "Coldwater River at Hernando, MS",
+    "state": "MS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=hhsm6",
+    "longitude": -89.883089,
+    "latitude": 34.801153
+  },
+  {
+    "id": 152,
+    "nwsId": "OLVM6",
+    "waterbody": "Coldwater River",
+    "location": "Olive Branch, MS",
+    "state": "MS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=olvm6",
+    "longitude": -89.753333,
+    "latitude": 34.9075
+  },
+  {
+    "id": 153,
+    "nwsId": "MHOM6",
+    "waterbody": "Mississippi River",
+    "location": "Tunica Mhoon Landing, MS",
+    "state": "MS",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mhom6",
+    "longitude": -90.44833,
+    "latitude": 34.73639
+  },
+  {
+    "id": 154,
+    "nwsId": "HSKO2",
+    "waterbody": "Arkansas River",
+    "location": "Haskell, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=hsko2",
+    "longitude": -95.639444,
+    "latitude": 35.822222
+  },
+  {
+    "id": 155,
+    "nwsId": "MKGO2",
+    "waterbody": "Arkansas River",
+    "location": "Muskogee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=mkgo2",
+    "longitude": -95.296944,
+    "latitude": 35.769444
+  },
+  {
+    "id": 156,
+    "nwsId": "PCYO2",
+    "waterbody": "Arkansas River",
+    "location": "Ponca City, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=pcyo2",
+    "longitude": -96.93,
+    "latitude": 36.693333
+  },
+  {
+    "id": 157,
+    "nwsId": "RLSO2",
+    "waterbody": "Arkansas River",
+    "location": "Ralston, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=rlso2",
+    "longitude": -96.728056,
+    "latitude": 36.504167
+  },
+  {
+    "id": 158,
+    "nwsId": "TLSO2",
+    "waterbody": "Arkansas River",
+    "location": "Tulsa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=tlso2",
+    "longitude": -96.006111,
+    "latitude": 36.140556
+  },
+  {
+    "id": 159,
+    "nwsId": "ELDO2",
+    "waterbody": "Baron Fork",
+    "location": "Eldon, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=eldo2",
+    "longitude": -94.838333,
+    "latitude": 35.921111
+  },
+  {
+    "id": 160,
+    "nwsId": "AVTO2",
+    "waterbody": "Bird Creek",
+    "location": "Avant, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=avto2",
+    "longitude": -96.06,
+    "latitude": 36.485
+  },
+  {
+    "id": 161,
+    "nwsId": "OWSO2",
+    "waterbody": "Bird Creek",
+    "location": "Owasso, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=owso2",
+    "longitude": -95.866944,
+    "latitude": 36.248333
+  },
+  {
+    "id": 162,
+    "nwsId": "SPEO2",
+    "waterbody": "Bird Creek",
+    "location": "Sperry, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=speo2",
+    "longitude": -95.953889,
+    "latitude": 36.278333
+  },
+  {
+    "id": 163,
+    "nwsId": "PAWO2",
+    "waterbody": "Black Bear Creek",
+    "location": "Pawnee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=pawo2",
+    "longitude": -96.799167,
+    "latitude": 36.343611
+  },
+  {
+    "id": 164,
+    "nwsId": "CLVO2",
+    "waterbody": "Canadian River",
+    "location": "Calvin, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=clvo2",
+    "longitude": -96.243617,
+    "latitude": 34.977867
+  },
+  {
+    "id": 165,
+    "nwsId": "KCRO2",
+    "waterbody": "Canadian River",
+    "location": "Konawa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=kcro2",
+    "longitude": -96.6831,
+    "latitude": 34.933333
+  },
+  {
+    "id": 166,
+    "nwsId": "WHTO2",
+    "waterbody": "Canadian River",
+    "location": "Whitefield, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=whto2",
+    "longitude": -95.237189,
+    "latitude": 35.262319
+  },
+  {
+    "id": 167,
+    "nwsId": "BVLO2",
+    "waterbody": "Caney River",
+    "location": "Bartlesville, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=bvlo2",
+    "longitude": -95.971944,
+    "latitude": 36.755556
+  },
+  {
+    "id": 168,
+    "nwsId": "CVLO2",
+    "waterbody": "Caney River",
+    "location": "Collinsville, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=cvlo2",
+    "longitude": -95.81,
+    "latitude": 36.394722
+  },
+  {
+    "id": 169,
+    "nwsId": "RAMO2",
+    "waterbody": "Caney River",
+    "location": "Ramona, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=ramo2",
+    "longitude": -95.841667,
+    "latitude": 36.508889
+  },
+  {
+    "id": 170,
+    "nwsId": "RIPO2",
+    "waterbody": "Cimarron River",
+    "location": "Ripley, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=ripo2",
+    "longitude": -96.91225,
+    "latitude": 35.985893
+  },
+  {
+    "id": 171,
+    "nwsId": "BGSO2",
+    "waterbody": "Deep Fork River",
+    "location": "Beggs, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=bgso2",
+    "longitude": -96.068333,
+    "latitude": 35.673889
+  },
+  {
+    "id": 172,
+    "nwsId": "SDFO2",
+    "waterbody": "Deep Fork River",
+    "location": "Stroud, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=sdfo2",
+    "longitude": -96.6625,
+    "latitude": 35.686111
+  },
+  {
+    "id": 173,
+    "nwsId": "WRWO2",
+    "waterbody": "Deep Fork River",
+    "location": "Warwick, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=wrwo2",
+    "longitude": -97.008362,
+    "latitude": 35.680896
+  },
+  {
+    "id": 174,
+    "nwsId": "BIRO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Birch Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=biro2",
+    "longitude": -96.1625,
+    "latitude": 36.534722
+  },
+  {
+    "id": 175,
+    "nwsId": "CPLO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Copan Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=cplo2",
+    "longitude": -95.971389,
+    "latitude": 36.885556
+  },
+  {
+    "id": 176,
+    "nwsId": "EUFO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Eufala Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=eufo2",
+    "longitude": -95.3625,
+    "latitude": 35.306944
+  },
+  {
+    "id": 177,
+    "nwsId": "GIBO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Ft. Gibson Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=gibo2",
+    "longitude": -95.228611,
+    "latitude": 35.871111
+  },
+  {
+    "id": 178,
+    "nwsId": "HEYO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Heyburn Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=heyo2",
+    "longitude": -96.298611,
+    "latitude": 35.947778
+  },
+  {
+    "id": 179,
+    "nwsId": "KAWO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Kaw Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=kawo2",
+    "longitude": -96.921667,
+    "latitude": 36.699444
+  },
+  {
+    "id": 180,
+    "nwsId": "KERO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "R.S. Kerr Lock and Dam, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=kero2",
+    "longitude": -94.778611,
+    "latitude": 35.349167
+  },
+  {
+    "id": 181,
+    "nwsId": "KEYO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Keystone Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=keyo2",
+    "longitude": -96.251667,
+    "latitude": 36.151667
+  },
+  {
+    "id": 182,
+    "nwsId": "MFDO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Hudson Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=mfdo2",
+    "longitude": -95.193333,
+    "latitude": 36.231667
+  },
+  {
+    "id": 183,
+    "nwsId": "NNEO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Lake Eucha, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=nneo2",
+    "longitude": -94.935,
+    "latitude": 36.375
+  },
+  {
+    "id": 184,
+    "nwsId": "OOLO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Oologah Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=oolo2",
+    "longitude": -95.679444,
+    "latitude": 36.4225
+  },
+  {
+    "id": 185,
+    "nwsId": "PENO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Grand Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=peno2",
+    "longitude": -95.038611,
+    "latitude": 36.471389
+  },
+  {
+    "id": 186,
+    "nwsId": "SKLO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Skiatook Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=sklo2",
+    "longitude": -96.086944,
+    "latitude": 36.350556
+  },
+  {
+    "id": 187,
+    "nwsId": "TENO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Tenkiller Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=teno2",
+    "longitude": -95.049167,
+    "latitude": 35.596667
+  },
+  {
+    "id": 188,
+    "nwsId": "WSLO2",
+    "waterbody": "Eastern Oklahoma Lakes",
+    "location": "Wister Lake, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=wslo2",
+    "longitude": -94.719444,
+    "latitude": 34.936111
+  },
+  {
+    "id": 189,
+    "nwsId": "KNSO2",
+    "waterbody": "Flint Creek ",
+    "location": "Kansas, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=knso2",
+    "longitude": -94.706667,
+    "latitude": 36.186389
+  },
+  {
+    "id": 190,
+    "nwsId": "CWYO2",
+    "waterbody": "Illinois River ",
+    "location": "Chewey, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=cwyo2",
+    "longitude": -94.783056,
+    "latitude": 36.104167
+  },
+  {
+    "id": 191,
+    "nwsId": "GORO2",
+    "waterbody": "Illinois River ",
+    "location": "Gore, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=goro2",
+    "longitude": -95.068611,
+    "latitude": 35.573056
+  },
+  {
+    "id": 192,
+    "nwsId": "TALO2",
+    "waterbody": "Illinois River ",
+    "location": "Tahlequah, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=talo2",
+    "longitude": -94.9225,
+    "latitude": 35.925833
+  },
+  {
+    "id": 193,
+    "nwsId": "WTTO2",
+    "waterbody": "Illinois River ",
+    "location": "Watts, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=wtto2",
+    "longitude": -94.571944,
+    "latitude": 36.13
+  },
+  {
+    "id": 194,
+    "nwsId": "NLRO2",
+    "waterbody": "Little River ",
+    "location": "Norman, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=nlro2",
+    "longitude": -97.213917,
+    "latitude": 35.221736
+  },
+  {
+    "id": 195,
+    "nwsId": "NRMO2",
+    "waterbody": "Little River ",
+    "location": "Lake Thunderbird, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=nrmo2",
+    "longitude": -97.217222,
+    "latitude": 35.223333
+  },
+  {
+    "id": 196,
+    "nwsId": "SASO2",
+    "waterbody": "Little River ",
+    "location": "Sasakwa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=saso2",
+    "longitude": -96.512511,
+    "latitude": 34.965362
+  },
+  {
+    "id": 197,
+    "nwsId": "TCMO2",
+    "waterbody": "Little River ",
+    "location": "Tecumseh, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=tcmo2",
+    "longitude": -96.931966,
+    "latitude": 35.172574
+  },
+  {
+    "id": 198,
+    "nwsId": "COMO2",
+    "waterbody": "Neosho River",
+    "location": "Commerce, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=como2",
+    "longitude": -94.957222,
+    "latitude": 36.928611
+  },
+  {
+    "id": 199,
+    "nwsId": "HRHO2",
+    "waterbody": "North Canadian River",
+    "location": "Harrah, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=hrho2",
+    "longitude": -97.193919,
+    "latitude": 35.500341
+  },
+  {
+    "id": 200,
+    "nwsId": "SNCO2",
+    "waterbody": "North Canadian River",
+    "location": "Shawnee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=snco2",
+    "longitude": -96.869466,
+    "latitude": 35.333127
+  },
+  {
+    "id": 201,
+    "nwsId": "SWNO2",
+    "waterbody": "North Canadian River",
+    "location": "Shawnee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=swno2",
+    "longitude": -96.960023,
+    "latitude": 35.332848
+  },
+  {
+    "id": 202,
+    "nwsId": "WETO2",
+    "waterbody": "North Canadian River",
+    "location": "Wetumka, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=weto2",
+    "longitude": -96.206117,
+    "latitude": 35.265645
+  },
+  {
+    "id": 203,
+    "nwsId": "WWLO2",
+    "waterbody": "North Deer Creek",
+    "location": "Wes Watkins Reservoir, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=wwlo2",
+    "longitude": -97.098889,
+    "latitude": 35.401944
+  },
+  {
+    "id": 204,
+    "nwsId": "JNKO2",
+    "waterbody": "Polecat Creek",
+    "location": "Jenks, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=jnko2",
+    "longitude": -95.993861,
+    "latitude": 36.010389
+  },
+  {
+    "id": 205,
+    "nwsId": "SPCO2",
+    "waterbody": "Polecat Creek",
+    "location": "Sapulpa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=spco2",
+    "longitude": -96.081944,
+    "latitude": 35.988333
+  },
+  {
+    "id": 206,
+    "nwsId": "LVNO2",
+    "waterbody": "Poteau River",
+    "location": "Loving, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=lvno2",
+    "longitude": -94.483889,
+    "latitude": 34.879722
+  },
+  {
+    "id": 207,
+    "nwsId": "PANO2",
+    "waterbody": "Poteau River",
+    "location": "Panama, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=pano2",
+    "longitude": -94.652778,
+    "latitude": 35.165556
+  },
+  {
+    "id": 208,
+    "nwsId": "PTAO2",
+    "waterbody": "Poteau River",
+    "location": "Poteau, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=ptao2",
+    "longitude": -94.602778,
+    "latitude": 35.059722
+  },
+  {
+    "id": 209,
+    "nwsId": "OKEO2",
+    "waterbody": "Sand Creek ",
+    "location": "Okesa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=okeo2",
+    "longitude": -96.08,
+    "latitude": 36.732778
+  },
+  {
+    "id": 210,
+    "nwsId": "SHLO2",
+    "waterbody": "South Deer Creek Tributary",
+    "location": "Shawnee Rerservoir near Shawnee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=shlo2",
+    "longitude": -97.062803,
+    "latitude": 35.347291
+  },
+  {
+    "id": 211,
+    "nwsId": "QUAO2",
+    "waterbody": "Spring River",
+    "location": "Quapaw, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=quao2",
+    "longitude": -94.746111,
+    "latitude": 36.934444
+  },
+  {
+    "id": 212,
+    "nwsId": "SSQO2",
+    "waterbody": "Squirrel Creek",
+    "location": "Shawnee, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=ssqo2",
+    "longitude": -96.912222,
+    "latitude": 35.304167
+  },
+  {
+    "id": 213,
+    "nwsId": "SFRO2",
+    "waterbody": "Stillwater Creek ",
+    "location": "Stillwater, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=sfro2",
+    "longitude": -96.962222,
+    "latitude": 36.059167
+  },
+  {
+    "id": 214,
+    "nwsId": "CLRO2",
+    "waterbody": "Verdigris River",
+    "location": "Claremore, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=clro2",
+    "longitude": -95.699722,
+    "latitude": 36.3075
+  },
+  {
+    "id": 215,
+    "nwsId": "CTOO2",
+    "waterbody": "Verdigris River",
+    "location": "Catoosa, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=ctoo2",
+    "longitude": -95.707222,
+    "latitude": 36.203611
+  },
+  {
+    "id": 216,
+    "nwsId": "INOO2",
+    "waterbody": "Verdigris River",
+    "location": "Inola, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=inoo2",
+    "longitude": -95.618889,
+    "latitude": 36.164722
+  },
+  {
+    "id": 217,
+    "nwsId": "LEPO2",
+    "waterbody": "Verdigris River",
+    "location": "Lenapah, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=lepo2",
+    "longitude": -95.585833,
+    "latitude": 36.851111
+  },
+  {
+    "id": 218,
+    "nwsId": "PLVO2",
+    "waterbody": "Washita River",
+    "location": "Pauls Valley, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=plvo2",
+    "longitude": -97.251412,
+    "latitude": 34.754802
+  },
+  {
+    "id": 219,
+    "nwsId": "WWCO2",
+    "waterbody": "Wewoka Creek",
+    "location": "Wetumka, OK",
+    "state": "OK",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=oun&gage=wwco2",
+    "longitude": -96.2481,
+    "latitude": 35.195
+  },
+  {
+    "id": 220,
+    "nwsId": "MLLT1",
+    "waterbody": "Big Creek",
+    "location": "Millington, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mllt1",
+    "longitude": -89.917778,
+    "latitude": 35.334444
+  },
+  {
+    "id": 221,
+    "nwsId": "ROMT1",
+    "waterbody": "Big Creek",
+    "location": "Rosemark, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=romt1",
+    "longitude": -89.803611,
+    "latitude": 35.365833
+  },
+  {
+    "id": 222,
+    "nwsId": "MPHT1",
+    "waterbody": "Fletcher Creek",
+    "location": "Bartlett, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mpht1",
+    "longitude": -89.866389,
+    "latitude": 35.169444
+  },
+  {
+    "id": 223,
+    "nwsId": "RLTT1",
+    "waterbody": "Hatchie River",
+    "location": "Rialto, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=rltt1",
+    "longitude": -89.609444,
+    "latitude": 35.637222
+  },
+  {
+    "id": 224,
+    "nwsId": "ARLT1",
+    "waterbody": "Loosahatchie River",
+    "location": "Arlington, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=arlt1",
+    "longitude": -89.639444,
+    "latitude": 35.310833
+  },
+  {
+    "id": 225,
+    "nwsId": "BRNT1",
+    "waterbody": "Loosahatchie River",
+    "location": "Brunswick, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=brnt1",
+    "longitude": -89.766111,
+    "latitude": 35.281111
+  },
+  {
+    "id": 226,
+    "nwsId": "FRRT1",
+    "waterbody": "Loosahatchie River",
+    "location": "Frayser, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=frrt1",
+    "longitude": -89.994167,
+    "latitude": 35.259722
+  },
+  {
+    "id": 227,
+    "nwsId": "SPYT1",
+    "waterbody": "Loosahatchie River",
+    "location": "Singleton Parkway, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=spyt1",
+    "longitude": -89.887222,
+    "latitude": 35.275
+  },
+  {
+    "id": 228,
+    "nwsId": "MEMT1",
+    "waterbody": "Mississippi River",
+    "location": "Memphis, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=memt1",
+    "longitude": -90.0775,
+    "latitude": 35.123056
+  },
+  {
+    "id": 229,
+    "nwsId": "FRST1",
+    "waterbody": "Nonconnah Creek",
+    "location": "Farrisview Boulevard, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=frst1",
+    "longitude": -89.954167,
+    "latitude": 35.076389
+  },
+  {
+    "id": 230,
+    "nwsId": "NONT1",
+    "waterbody": "Nonconnah Creek",
+    "location": "Winchester Rd, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=nont1",
+    "longitude": -89.818056,
+    "latitude": 35.049722
+  },
+  {
+    "id": 231,
+    "nwsId": "RVPT1",
+    "waterbody": "Nonconnah Creek",
+    "location": "Riverport Road, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=rvpt1",
+    "longitude": -90.079167,
+    "latitude": 35.080278
+  },
+  {
+    "id": 232,
+    "nwsId": "MGLT1",
+    "waterbody": "Obion River",
+    "location": "Mengelwood, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=mglt1",
+    "longitude": -89.557222,
+    "latitude": 36.048889
+  },
+  {
+    "id": 233,
+    "nwsId": "COTT1",
+    "waterbody": "Wolf River",
+    "location": "Collierville, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=cott1",
+    "longitude": -89.650556,
+    "latitude": 35.081389
+  },
+  {
+    "id": 234,
+    "nwsId": "GERT1",
+    "waterbody": "Wolf River",
+    "location": "Germantown, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=gert1",
+    "longitude": -89.801389,
+    "latitude": 35.116389
+  },
+  {
+    "id": 235,
+    "nwsId": "HLYT1",
+    "waterbody": "Wolf River",
+    "location": "Hollywood St, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=hlyt1",
+    "longitude": -89.975556,
+    "latitude": 35.187778
+  },
+  {
+    "id": 236,
+    "nwsId": "RLGT1",
+    "waterbody": "Wolf River",
+    "location": "Raleigh, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=rlgt1",
+    "longitude": -89.9225,
+    "latitude": 35.201667
+  },
+  {
+    "id": 237,
+    "nwsId": "ROST1",
+    "waterbody": "Wolf River",
+    "location": "Rossville, TN",
+    "state": "TN",
+    "nwsURL": "https://water.weather.gov/ahps2/hydrograph.php?wfo=meg&gage=rost1",
+    "longitude": -89.540833,
+    "latitude": 35.054167
+  }
+]
