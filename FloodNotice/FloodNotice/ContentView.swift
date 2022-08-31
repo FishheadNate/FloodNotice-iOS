@@ -24,6 +24,7 @@ struct ContentView: View {
             
             Divider()
                 .padding()
+            NWSDataView(location: location)
         }
         .navigationBarTitle(Text(location.nwsId))
     }
