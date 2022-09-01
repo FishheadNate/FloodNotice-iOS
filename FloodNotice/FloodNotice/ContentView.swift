@@ -20,10 +20,8 @@ struct ContentView: View {
             
             Text(location.waterbody.trimmingCharacters(in: .whitespaces) + " near " + location.location)
                 .bold()
-                .padding(.top)
-            
-            Divider()
-                .padding()
+                .padding(.vertical)
+
             NWSDataView(location: location)
         }
         .navigationBarTitle(Text(location.nwsId))

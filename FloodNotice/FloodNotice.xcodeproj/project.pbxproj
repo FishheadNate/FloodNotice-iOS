@@ -17,9 +17,7 @@
 		16A33A5528BE948D00184052 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5428BE948D00184052 /* MainMapView.swift */; };
 		16A33A5728BE953A00184052 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5628BE953A00184052 /* MainListView.swift */; };
 		16A33A5928BE95AD00184052 /* GageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5828BE95AD00184052 /* GageMapView.swift */; };
-		16A33A5B28BEA1B700184052 /* NWSDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5A28BEA1B700184052 /* NWSDataFetch.swift */; };
 		16A33A5E28BEA21800184052 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 16A33A5D28BEA21800184052 /* SWXMLHash */; };
-		16A33A6028BEA25F00184052 /* FloodStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5F28BEA25F00184052 /* FloodStage.swift */; };
 		16A33A6228BEA61600184052 /* NWSDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A6128BEA61600184052 /* NWSDataView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +33,6 @@
 		16A33A5428BE948D00184052 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		16A33A5628BE953A00184052 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		16A33A5828BE95AD00184052 /* GageMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GageMapView.swift; sourceTree = "<group>"; };
-		16A33A5A28BEA1B700184052 /* NWSDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSDataFetch.swift; sourceTree = "<group>"; };
-		16A33A5F28BEA25F00184052 /* FloodStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodStage.swift; sourceTree = "<group>"; };
 		16A33A6128BEA61600184052 /* NWSDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,13 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				16A33A4028BE84BE00184052 /* FloodNoticeApp.swift */,
-				16A33A5F28BEA25F00184052 /* FloodStage.swift */,
 				16A33A5428BE948D00184052 /* MainMapView.swift */,
 				16A33A5628BE953A00184052 /* MainListView.swift */,
 				16A33A5828BE95AD00184052 /* GageMapView.swift */,
 				16A33A6128BEA61600184052 /* NWSDataView.swift */,
 				16A33A4228BE84BE00184052 /* ContentView.swift */,
-				16A33A5A28BEA1B700184052 /* NWSDataFetch.swift */,
 				16A33A5228BE92CC00184052 /* GageLocation.swift */,
 				16A33A5028BE92AC00184052 /* GageLocations.swift */,
 				16A33A4428BE84C100184052 /* Assets.xcassets */,
@@ -174,13 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A33A4328BE84BE00184052 /* ContentView.swift in Sources */,
-				16A33A5B28BEA1B700184052 /* NWSDataFetch.swift in Sources */,
 				16A33A5728BE953A00184052 /* MainListView.swift in Sources */,
 				16A33A5128BE92AC00184052 /* GageLocations.swift in Sources */,
 				16A33A5328BE92CC00184052 /* GageLocation.swift in Sources */,
 				16A33A5528BE948D00184052 /* MainMapView.swift in Sources */,
 				16A33A4128BE84BE00184052 /* FloodNoticeApp.swift in Sources */,
-				16A33A6028BEA25F00184052 /* FloodStage.swift in Sources */,
 				16A33A5928BE95AD00184052 /* GageMapView.swift in Sources */,
 				16A33A6228BEA61600184052 /* NWSDataView.swift in Sources */,
 			);

@@ -27,7 +27,7 @@ struct FloodNoticeApp: App {
                 }
                 .tabItem {
                     Image(systemName: "binoculars.fill")
-                    Text("Stream Gages by Name")
+                    Text("Stream Gages List")
                 }
             }
             .environmentObject(locations)
