@@ -48,6 +48,14 @@ flowchart LR
     end
 ```
 
+---
+
+## Demo
+
+![Simulator Screen Recording - iPhone 11 - 2022-09-01 at 03 45 18](https://user-images.githubusercontent.com/22895187/187872425-b5f2f620-d91c-4a02-bc88-cd8eb7478260.gif)
+
+---
+
 ## Current Coverage
 
 ```geojson
