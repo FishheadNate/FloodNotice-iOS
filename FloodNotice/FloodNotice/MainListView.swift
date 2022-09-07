@@ -4,6 +4,7 @@
 //
 //  Created by Nathan Copeland on 8/30/22.
 //
+// List of stream gages objects created by GageLocations.swift sorted by state and then waterbody
 
 import SwiftUI
 
@@ -17,7 +18,7 @@ struct MainListView: View {
                     .lineLimit(1)
             }
         }
-        .navigationTitle("Stream Gages by State")
+        .navigationTitle("FloodNotice")
         .navigationBarTitleDisplayMode(.inline)
     }
 }

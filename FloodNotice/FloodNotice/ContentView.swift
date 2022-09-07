@@ -20,10 +20,11 @@ struct ContentView: View {
             
             Text(location.waterbody.trimmingCharacters(in: .whitespaces) + " near " + location.location)
                 .bold()
-                .padding(.top)
-            
-            Divider()
-                .padding()
+                .padding(.vertical)
+
+            Section(footer: Text("© NOAA AHPS").foregroundColor(.secondary)) {
+                NWSDataView(location: location)
+            }
         }
         .navigationBarTitle(Text(location.nwsId))
     }

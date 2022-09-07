@@ -4,7 +4,7 @@
 //
 //  Created by Nathan Copeland on 8/30/22.
 //
-// Interactive Map of all the stream gage objects created with GageLocations.swift
+// Interactive Map of all the stream gage objects created by GageLocations.swift
 
 import MapKit
 import SwiftUI
@@ -38,7 +38,7 @@ struct MainMapView: View {
                 }
             }
         }
-        .navigationTitle("Stream Gages")
+        .navigationTitle("FloodNotice")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
