@@ -263,7 +263,6 @@ struct NWSDataView: View {
     }
     
     func parseXML() async {
-        print("<><><><>")
         let nwsID = location.nwsId.lowercased()
         guard let url = URL(string: "https://water.weather.gov/ahps2/hydrograph_to_xml.php?output=xml&gage=" + nwsID) else {
             print("Invalid URL for " + nwsID)
@@ -326,7 +325,6 @@ struct NWSDataView: View {
         } catch {
             print("Invalid data returned for " + nwsID)
         }
-        print("<><><><>")
     }
 }
 
