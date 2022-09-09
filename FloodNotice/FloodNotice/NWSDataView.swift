@@ -26,28 +26,24 @@ struct ObservedData: Codable, Identifiable {
 struct NWSDataView: View {
     @State var location: GageLocation
     @State private var sigFloodStages = [FloodLevel]()
-    @State private var observations = [ObservedData]()
-    @State private var forecasts = [ObservedData]()
+    //@State private var dataValues = [ObservedDataV2]()
+    @State private var dataValues = [
+        "forecast": [ObservedData](),
+        "observed": [ObservedData]()
+    ]
     
     var body: some View {
         VStack {
             HStack {
                 Text("Currrent Status: ")
-                
-                ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(1), id: \.id) { item in
+                ForEach(dataValues["observed"]!.prefix(1), id: \.id) { item in
                     if item.gageHeight != "" {
                         Text(item.gageHeight + " ft")
                     }
                 }
-                
-                ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(1), id: \.id) { item in
-                    if item.flowRate != "" {
-                        Text(item.flowRate)
-                        /*if (item.flowRate as NSString).doubleValue < 1 {
-                            Text(" (" + String(Int((item.flowRate as NSString).doubleValue * Double(1000))) + " cfs)")
-                        } else {
-                            Text(" (" + item.flowRate + "k cfs)")
-                        }*/
+                ForEach(dataValues["observed"]!.prefix(1), id: \.id) { item in
+                    if item.flowRate != "---" {
+                        Text("(\(item.flowRate))")
                     }
                 }
             }
@@ -106,7 +102,7 @@ struct NWSDataView: View {
                         Text("Time Stamp")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
+                    ForEach(dataValues["observed"]!, id: \.id) { item in
                         Text(item.pubDate, format:
                             .dateTime
                             .month(.abbreviated)
@@ -126,7 +122,7 @@ struct NWSDataView: View {
                         Text("Gage Height")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
+                    ForEach(dataValues["observed"]!, id: \.id) { item in
                         if item.gageHeight == "" {
                             Text("---")
                                 .scaledToFill()
@@ -148,27 +144,12 @@ struct NWSDataView: View {
                         Text("Flow Rate")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
-                        if item.flowRate == "" {
-                            Text("---")
-                                .scaledToFill()
-                                .minimumScaleFactor(0.1)
-                                .lineLimit(1)
-                                .padding(.top)
-                        } else if (item.flowRate as NSString).doubleValue < 1 {
-                            let adjustedFlowRate = (item.flowRate as NSString).doubleValue * Double(1000)
-                            Text(String(Int(adjustedFlowRate)) + " cfs")
-                                .scaledToFill()
-                                .minimumScaleFactor(0.1)
-                                .lineLimit(1)
-                                .padding(.top)
-                        } else {
-                            Text(item.flowRate + "k cfs")
-                                .scaledToFill()
-                                .minimumScaleFactor(0.1)
-                                .lineLimit(1)
-                                .padding(.top)
-                        }
+                    ForEach(dataValues["observed"]!, id: \.id) { item in
+                        Text(item.flowRate)
+                            .scaledToFill()
+                            .minimumScaleFactor(0.1)
+                            .lineLimit(1)
+                            .padding(.top)
                     }
                 }
             }
@@ -177,7 +158,7 @@ struct NWSDataView: View {
             Divider()
                 .padding()
             
-            if forecasts.count == 0 {
+            if dataValues["forecast"]!.count == 0 {
                 Text("Forecast Unavailable")
             } else {
                 Text("Forecast")
@@ -188,7 +169,7 @@ struct NWSDataView: View {
                             Text("Time Stamp")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
+                        ForEach(dataValues["forecast"]!, id: \.id) { item in
                             Text(item.pubDate, format:
                                 .dateTime
                                 .month(.abbreviated)
@@ -208,7 +189,7 @@ struct NWSDataView: View {
                             Text("Gage Height")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
+                        ForEach(dataValues["forecast"]!, id: \.id) { item in
                             if item.gageHeight == "" {
                                 Text("---")
                                     .scaledToFill()
@@ -230,27 +211,13 @@ struct NWSDataView: View {
                             Text("Flow Rate")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
-                            if item.flowRate == "" {
-                                Text("---")
-                                    .scaledToFill()
-                                    .minimumScaleFactor(0.1)
-                                    .lineLimit(1)
-                                    .padding(.top)
-                            } else if (item.flowRate as NSString).doubleValue < 1 {
-                                let adjustedFlowRate = (item.flowRate as NSString).doubleValue * Double(1000)
-                                Text(String(Int(adjustedFlowRate)) + " cfs")
-                                    .scaledToFill()
-                                    .minimumScaleFactor(0.1)
-                                    .lineLimit(1)
-                                    .padding(.top)
-                            } else {
-                                Text(item.flowRate + "k cfs")
-                                    .scaledToFill()
-                                    .minimumScaleFactor(0.1)
-                                    .lineLimit(1)
-                                    .padding(.top)
-                            }
+                        //ForEach(dataValues.suffix(5), id: \.id) { item in
+                        ForEach(dataValues["forecast"]!, id: \.id) { item in
+                            Text(item.flowRate)
+                                .scaledToFill()
+                                .minimumScaleFactor(0.1)
+                                .lineLimit(1)
+                                .padding(.top)
                         }
                     }
                 }
@@ -259,12 +226,12 @@ struct NWSDataView: View {
 
         }
         .task {
-            await parseXML()
+            await loadData(locationID: location.nwsId)
         }
     }
     
-    func parseXML() async {
-        let nwsID = location.nwsId.lowercased()
+    func loadData(locationID: String) async {
+        let nwsID = locationID.lowercased()
         guard let url = URL(string: "https://water.weather.gov/ahps2/hydrograph_to_xml.php?output=xml&gage=" + nwsID) else {
             print("Invalid URL for " + nwsID)
             return
@@ -274,95 +241,76 @@ struct NWSDataView: View {
             let (data, _) = try await URLSession.shared.data(from: url)
             
             if let xmlFeed = try? XMLHash.parse(NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String) {
-                
                 // Flood Stage Levels
-                let dropStages = ["low", "action"]
-                
-                for child in xmlFeed["site"]["sigstages"].children {
-                    if xmlFeed["site"]["sigstages"][child.element!.name].element!.text.count > 0 {
-                        sigFloodStages.append(FloodLevel(
-                            id: UUID(),
-                            stage: child.element!.name,
-                            gageHeight: xmlFeed["site"]["sigstages"][child.element!.name].element!.text
-                        ))
-                    }
-                }
-                sigFloodStages.removeAll(where: {dropStages.contains($0.stage)})
-                
-                // Observations
-                let dateParser = DateFormatter()
-                dateParser.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-                
-                for elem in xmlFeed["site"]["observed"]["datum"].all {
-                    if elem.children.count > 3 {
-                        observations.append(ObservedData(
-                            id: UUID(),
-                            pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                            gageHeight: elem["primary"].element!.text,
-                            flowRate: elem["secondary"].element!.text
-                        ))
-                    } else {
-                        observations.append(ObservedData(
-                            id: UUID(),
-                            pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                            gageHeight: elem["primary"].element!.text,
-                            flowRate: ""
-                        ))
-                    }
-                }
-                
-                // Forecast
-                if xmlFeed["site"]["forecast"].element!.text != "There Is No Displayable Forecast Data In The Given Time Frame" {
-                    for elem in xmlFeed["site"]["forecast"]["datum"].all {
-                        if elem.children.count > 3 {
-                            forecasts.append(ObservedData(
-                                id: UUID(),
-                                pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                                gageHeight: elem["primary"].element!.text,
-                                flowRate: elem["secondary"].element!.text
-                            ))
-                        } else {
-                            forecasts.append(ObservedData(
-                                id: UUID(),
-                                pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                                gageHeight: elem["primary"].element!.text,
-                                flowRate: ""
-                            ))
-                        }
-                    }
-                }
+                await parseFloodStages(inputXML: xmlFeed["site"]["sigstages"])
+                print("Flood Stages parsed")
+                // Observed Data
+                await parseXMLData(dataType: "observed", inputXML: xmlFeed["site"]["observed"])
+                print("Observed parsed")
+                // Forecast Data
+                await parseXMLData(dataType: "forecast", inputXML: xmlFeed["site"]["forecast"])
+                print("Forecast parsed")
             }
         } catch {
             print("Invalid data returned for " + nwsID)
         }
+        return
     }
     
-    func formatFlowRate(in srcValue: String) -> String {
-        let adjustedFlowRate = "--< " + srcValue + " >--"
-        return adjustedFlowRate
-    }
-    
-    /*func formatFlowRates(in srcValue: String?) {
-        if let flowValue = srcValue {
-            if flowValue == "" {
-                let adjustedFlowRate = "---"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            } else if (flowValue as NSString).doubleValue < 1 {
-                let adjustedFlowRate = String(Int((flowValue as NSString).doubleValue * Double(1000))) + " cfs"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            } else {
-                let adjustedFlowRate = flowValue + "k cfs"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            }
-        } else {
+    func formatFlowValue(inputValue: Double?) async -> String {
+        // Format raw flow rate values
+        if inputValue! < 0 {
             return "---"
+        } else if inputValue! < 1 {
+            let adjValue = Int(inputValue! * Double(1000))
+            return String(format: "\(adjValue) cfs")
+        } else {
+            return String(format: "%.2fk cfs", inputValue!)
         }
-    }*/
-}
+    }
+    
+    func parseFloodStages(inputXML: XMLIndexer) async {
+        // Build array of significate flood stage thresholds
+        for child in inputXML.children {
+            sigFloodStages.append(FloodLevel(
+                id: UUID(),
+                stage: child.element!.name,
+                gageHeight: child.element!.text
+            ))
+        }
+        
+        let dropStages = ["low", "action"]
+        sigFloodStages.removeAll(where: {dropStages.contains($0.stage)})
+    }
+    
+    func parseXMLData(dataType: String, inputXML: XMLIndexer) async {
+        // Build dictionary of arrays for observation and forecast dateTime stamps, gage heights, & flow rates
+        let dateParser = DateFormatter()
+        dateParser.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
 
+        if inputXML.children.count > 1 {
+            for child in inputXML.children.prefix(5) {
+                if child.children.count > 3 {
+                    let adjustedFlowRate = await formatFlowValue(inputValue: Double(child["secondary"].element!.text))
+                    
+                    dataValues[dataType]!.append(ObservedData(
+                        id: UUID(),
+                        pubDate: dateParser.date(from: child["valid"].element!.text)!,
+                        gageHeight: child["primary"].element!.text,
+                        flowRate: adjustedFlowRate
+                    ))
+                } else {
+                    dataValues[dataType]!.append(ObservedData(
+                        id: UUID(),
+                        pubDate: dateParser.date(from: child["valid"].element!.text)!,
+                        gageHeight: child["primary"].element!.text,
+                        flowRate: "---"
+                    ))
+                }
+            }
+        }
+    }
+}
 
 struct NWSDataView_Previews: PreviewProvider {
     static var previews: some View {
