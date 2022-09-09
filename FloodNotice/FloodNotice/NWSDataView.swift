@@ -210,7 +210,6 @@ struct NWSDataView: View {
                             Text("Flow Rate")
                         }
                         .font(.headline)
-                        //ForEach(dataValues.suffix(5), id: \.id) { item in
                         ForEach(dataValues["forecast"]!, id: \.id) { item in
                             Text(item.flowRate)
                                 .scaledToFill()
