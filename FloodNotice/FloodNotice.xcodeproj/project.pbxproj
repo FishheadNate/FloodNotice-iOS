@@ -19,6 +19,7 @@
 		16A33A5928BE95AD00184052 /* GageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5828BE95AD00184052 /* GageMapView.swift */; };
 		16A33A5E28BEA21800184052 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 16A33A5D28BEA21800184052 /* SWXMLHash */; };
 		16A33A6228BEA61600184052 /* NWSDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A6128BEA61600184052 /* NWSDataView.swift */; };
+		16EA011528CA5C590001D47C /* NWSDataViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA011428CA5C590001D47C /* NWSDataViewV2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		16A33A5628BE953A00184052 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		16A33A5828BE95AD00184052 /* GageMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GageMapView.swift; sourceTree = "<group>"; };
 		16A33A6128BEA61600184052 /* NWSDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSDataView.swift; sourceTree = "<group>"; };
+		16EA011428CA5C590001D47C /* NWSDataViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSDataViewV2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				16A33A5628BE953A00184052 /* MainListView.swift */,
 				16A33A5828BE95AD00184052 /* GageMapView.swift */,
 				16A33A6128BEA61600184052 /* NWSDataView.swift */,
+				16EA011428CA5C590001D47C /* NWSDataViewV2.swift */,
 				16A33A4228BE84BE00184052 /* ContentView.swift */,
 				16A33A5228BE92CC00184052 /* GageLocation.swift */,
 				16A33A5028BE92AC00184052 /* GageLocations.swift */,
@@ -169,6 +172,7 @@
 			files = (
 				16A33A4328BE84BE00184052 /* ContentView.swift in Sources */,
 				16A33A5728BE953A00184052 /* MainListView.swift in Sources */,
+				16EA011528CA5C590001D47C /* NWSDataViewV2.swift in Sources */,
 				16A33A5128BE92AC00184052 /* GageLocations.swift in Sources */,
 				16A33A5328BE92CC00184052 /* GageLocation.swift in Sources */,
 				16A33A5528BE948D00184052 /* MainMapView.swift in Sources */,

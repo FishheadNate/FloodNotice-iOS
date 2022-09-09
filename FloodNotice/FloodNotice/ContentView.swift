@@ -22,8 +22,9 @@ struct ContentView: View {
                 .bold()
                 .padding(.vertical)
 
-            Section(footer: Text("© NOAA AHPS").foregroundColor(.secondary)) {
-                NWSDataView(location: location)
+            Section(footer: Text("© NOAA AHPS").font(.footnote).foregroundColor(.secondary).padding(.top)) {
+                //NWSDataView(location: location)
+                NWSDataViewV2(location: location)
             }
         }
         .navigationBarTitle(Text(location.nwsId))

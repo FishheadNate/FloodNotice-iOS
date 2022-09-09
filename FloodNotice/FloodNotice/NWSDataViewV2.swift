@@ -1,46 +1,47 @@
 //
-//  NWSDataView.swift
+//  NWSDataViewV2.swift
 //  FloodNotice
 //
-//  Created by Nathan Copeland on 8/30/22.
+//  Created by Nathan Copeland on 9/8/22.
 //
-// Fetches NWS ADHPS XML for selected stream gage. Shows the current status, flood stage levels,
-// along with a subsample of the observations and forecast.
 
 import SwiftUI
 import SWXMLHash
 
-struct FloodLevel: Codable {
+struct FloodLevelV2: Codable {
     var id: UUID
     var stage: String
     var gageHeight: String
 }
 
-struct ObservedData: Codable, Identifiable {
+struct ObservedDataV2: Codable, Identifiable {
     var id: UUID
     var pubDate: Date
     var gageHeight: String
     var flowRate: String
 }
 
-struct NWSDataView: View {
+struct NWSDataViewV2: View {
     @State var location: GageLocation
-    @State private var sigFloodStages = [FloodLevel]()
-    @State private var observations = [ObservedData]()
-    @State private var forecasts = [ObservedData]()
+    @State private var sigFloodStages = [FloodLevelV2]()
+    @State private var dataValues = [ObservedDataV2]()
+    
+    @State private var observations = [ObservedDataV2]()
+    @State private var forecasts = [ObservedDataV2]()
     
     var body: some View {
         VStack {
             HStack {
                 Text("Currrent Status: ")
                 
-                ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(1), id: \.id) { item in
+                //ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(1), id: \.id) { item in
+                ForEach(dataValues.prefix(1), id: \.id) { item in
                     if item.gageHeight != "" {
                         Text(item.gageHeight + " ft")
                     }
                 }
                 
-                ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(1), id: \.id) { item in
+                ForEach(dataValues.prefix(1), id: \.id) { item in
                     if item.flowRate != "" {
                         Text(item.flowRate)
                         /*if (item.flowRate as NSString).doubleValue < 1 {
@@ -106,7 +107,7 @@ struct NWSDataView: View {
                         Text("Time Stamp")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
+                    ForEach(dataValues.prefix(5), id: \.id) { item in
                         Text(item.pubDate, format:
                             .dateTime
                             .month(.abbreviated)
@@ -126,7 +127,7 @@ struct NWSDataView: View {
                         Text("Gage Height")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
+                    ForEach(dataValues.prefix(5), id: \.id) { item in
                         if item.gageHeight == "" {
                             Text("---")
                                 .scaledToFill()
@@ -148,8 +149,9 @@ struct NWSDataView: View {
                         Text("Flow Rate")
                     }
                     .font(.headline)
-                    ForEach(observations.sorted {$0.pubDate < $1.pubDate}.suffix(6), id: \.id) { item in
-                        if item.flowRate == "" {
+                    ForEach(dataValues.prefix(5), id: \.id) { item in
+                        Text(item.flowRate)
+                        /*if item.flowRate == "" {
                             Text("---")
                                 .scaledToFill()
                                 .minimumScaleFactor(0.1)
@@ -168,7 +170,7 @@ struct NWSDataView: View {
                                 .minimumScaleFactor(0.1)
                                 .lineLimit(1)
                                 .padding(.top)
-                        }
+                        }*/
                     }
                 }
             }
@@ -177,7 +179,7 @@ struct NWSDataView: View {
             Divider()
                 .padding()
             
-            if forecasts.count == 0 {
+            if dataValues.suffix(5).count == 0 {
                 Text("Forecast Unavailable")
             } else {
                 Text("Forecast")
@@ -188,7 +190,7 @@ struct NWSDataView: View {
                             Text("Time Stamp")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
+                        ForEach(dataValues.suffix(5), id: \.id) { item in
                             Text(item.pubDate, format:
                                 .dateTime
                                 .month(.abbreviated)
@@ -208,7 +210,7 @@ struct NWSDataView: View {
                             Text("Gage Height")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
+                        ForEach(dataValues.suffix(5), id: \.id) { item in
                             if item.gageHeight == "" {
                                 Text("---")
                                     .scaledToFill()
@@ -230,8 +232,9 @@ struct NWSDataView: View {
                             Text("Flow Rate")
                         }
                         .font(.headline)
-                        ForEach(forecasts.sorted {$0.pubDate < $1.pubDate}.prefix(6), id: \.id) { item in
-                            if item.flowRate == "" {
+                        ForEach(dataValues.suffix(5), id: \.id) { item in
+                            Text(item.flowRate)
+                            /*if item.flowRate == "" {
                                 Text("---")
                                     .scaledToFill()
                                     .minimumScaleFactor(0.1)
@@ -250,7 +253,7 @@ struct NWSDataView: View {
                                     .minimumScaleFactor(0.1)
                                     .lineLimit(1)
                                     .padding(.top)
-                            }
+                            }*/
                         }
                     }
                 }
@@ -259,12 +262,12 @@ struct NWSDataView: View {
 
         }
         .task {
-            await parseXML()
+            await loadData(locationID: location.nwsId)
         }
     }
     
-    func parseXML() async {
-        let nwsID = location.nwsId.lowercased()
+    func loadData(locationID: String) async {
+        let nwsID = locationID.lowercased()
         guard let url = URL(string: "https://water.weather.gov/ahps2/hydrograph_to_xml.php?output=xml&gage=" + nwsID) else {
             print("Invalid URL for " + nwsID)
             return
@@ -274,98 +277,90 @@ struct NWSDataView: View {
             let (data, _) = try await URLSession.shared.data(from: url)
             
             if let xmlFeed = try? XMLHash.parse(NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String) {
-                
                 // Flood Stage Levels
-                let dropStages = ["low", "action"]
-                
-                for child in xmlFeed["site"]["sigstages"].children {
-                    if xmlFeed["site"]["sigstages"][child.element!.name].element!.text.count > 0 {
-                        sigFloodStages.append(FloodLevel(
-                            id: UUID(),
-                            stage: child.element!.name,
-                            gageHeight: xmlFeed["site"]["sigstages"][child.element!.name].element!.text
-                        ))
-                    }
-                }
-                sigFloodStages.removeAll(where: {dropStages.contains($0.stage)})
-                
-                // Observations
-                let dateParser = DateFormatter()
-                dateParser.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-                
-                for elem in xmlFeed["site"]["observed"]["datum"].all {
-                    if elem.children.count > 3 {
-                        observations.append(ObservedData(
-                            id: UUID(),
-                            pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                            gageHeight: elem["primary"].element!.text,
-                            flowRate: elem["secondary"].element!.text
-                        ))
-                    } else {
-                        observations.append(ObservedData(
-                            id: UUID(),
-                            pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                            gageHeight: elem["primary"].element!.text,
-                            flowRate: ""
-                        ))
-                    }
-                }
-                
-                // Forecast
-                if xmlFeed["site"]["forecast"].element!.text != "There Is No Displayable Forecast Data In The Given Time Frame" {
-                    for elem in xmlFeed["site"]["forecast"]["datum"].all {
-                        if elem.children.count > 3 {
-                            forecasts.append(ObservedData(
-                                id: UUID(),
-                                pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                                gageHeight: elem["primary"].element!.text,
-                                flowRate: elem["secondary"].element!.text
-                            ))
-                        } else {
-                            forecasts.append(ObservedData(
-                                id: UUID(),
-                                pubDate: dateParser.date(from: elem["valid"].element!.text)!,
-                                gageHeight: elem["primary"].element!.text,
-                                flowRate: ""
-                            ))
-                        }
-                    }
-                }
+                await parseFloodStages(inputXML: xmlFeed["site"]["sigstages"])
+                print("Flood Stages parsed")
+                // Observed Data
+                await parseGageData(inputXML: xmlFeed["site"]["observed"])
+                print("Observed parsed")
+                // Forecast Data
+                await parseGageData(inputXML: xmlFeed["site"]["forecast"])
+                print("Forecast parsed")
             }
         } catch {
             print("Invalid data returned for " + nwsID)
         }
+        return
     }
     
-    func formatFlowRate(in srcValue: String) -> String {
-        let adjustedFlowRate = "--< " + srcValue + " >--"
-        return adjustedFlowRate
-    }
-    
-    /*func formatFlowRates(in srcValue: String?) {
-        if let flowValue = srcValue {
-            if flowValue == "" {
-                let adjustedFlowRate = "---"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            } else if (flowValue as NSString).doubleValue < 1 {
-                let adjustedFlowRate = String(Int((flowValue as NSString).doubleValue * Double(1000))) + " cfs"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            } else {
-                let adjustedFlowRate = flowValue + "k cfs"
-                print(adjustedFlowRate)
-                return adjustedFlowRate
-            }
+    func formatFlowValue(inputValue: Double?) async -> String {
+        // Convert raw flow rate values
+        // "" -> "---" | 0.99 -> 99 cfs | 9.9 -> 9.9k cfs
+        let adjValue: String = String(inputValue ?? 0)
+        print("format flow values")
+        print(type(of: inputValue))
+        print("\(String(describing: inputValue))")
+        return adjValue
+        //return String(adjValue)
+        /*if inputValue == nil {
+            return "-"
         } else {
-            return "---"
+            if inputValue == "" {
+                return "---"
+            } else if Int(inputValue ?? 110) < 1 {
+                return String(Double(from: inputValue? ?? 0) * Double(1000))
+            } else {
+                return inputValue ?? "-"
+            }
+         }*/
+    }
+    
+    func parseFloodStages(inputXML: XMLIndexer) async {
+        // Build array of significate flood stage thresholds
+        for child in inputXML.children {
+            sigFloodStages.append(FloodLevelV2(
+                id: UUID(),
+                stage: child.element!.name,
+                gageHeight: child.element!.text
+            ))
         }
-    }*/
-}
+        
+        let dropStages = ["low", "action"]
+        sigFloodStages.removeAll(where: {dropStages.contains($0.stage)})
+    }
+    
+    func parseGageData(inputXML: XMLIndexer) async {
+        // Build array of observation and forecast dateTime stamps, gage heights, & flow rates
+        let dateParser = DateFormatter()
+        dateParser.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
 
-
-struct NWSDataView_Previews: PreviewProvider {
-    static var previews: some View {
-        NWSDataView(location: GageLocation.example)
+        if inputXML.children.count > 1 {
+            for child in inputXML.children.prefix(5) {
+                if child.children.count > 3 {
+                    let adjustedFlowRate = await formatFlowValue(inputValue: Double(child["secondary"].element!.text))
+                    
+                    dataValues.append(ObservedDataV2(
+                        id: UUID(),
+                        pubDate: dateParser.date(from: child["valid"].element!.text)!,
+                        gageHeight: child["primary"].element!.text,
+                        flowRate: adjustedFlowRate
+                    ))
+                } else {
+                    dataValues.append(ObservedDataV2(
+                        id: UUID(),
+                        pubDate: dateParser.date(from: child["valid"].element!.text)!,
+                        gageHeight: child["primary"].element!.text,
+                        flowRate: "---"
+                    ))
+                }
+            }
+        }
     }
 }
+
+struct NWSDataViewV2_Previews: PreviewProvider {
+    static var previews: some View {
+        NWSDataViewV2(location: GageLocation.example)
+    }
+}
+
