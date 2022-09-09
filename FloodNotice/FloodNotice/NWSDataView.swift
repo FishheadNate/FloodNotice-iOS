@@ -26,7 +26,6 @@ struct ObservedData: Codable, Identifiable {
 struct NWSDataView: View {
     @State var location: GageLocation
     @State private var sigFloodStages = [FloodLevel]()
-    //@State private var dataValues = [ObservedDataV2]()
     @State private var dataValues = [
         "forecast": [ObservedData](),
         "observed": [ObservedData]()
