@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct MainListView: View {
-    @EnvironmentObject var locations: GageLocations
+    @EnvironmentObject var gageStations: GageLocations
     
     var body: some View {
-        List(locations.places) { location in
-            NavigationLink(destination: ContentView(location: location)){
-                Text(location.waterbody + " (" +  location.location + ")")
+        List(gageStations.places) { gageStation in
+            NavigationLink(destination: ContentView(gageStation: gageStation)){
+                Text(gageStation.waterbody + " (" +  gageStation.location + ")")
                     .lineLimit(1)
             }
         }
