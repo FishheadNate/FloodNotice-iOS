@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     let location: GageLocation
-
+    
     var body: some View {
         ScrollView {
             GageMapView(location: location)
@@ -18,9 +18,15 @@ struct ContentView: View {
                 .cornerRadius(5)
                 .clipShape(Circle())
             
-            Text(location.waterbody.trimmingCharacters(in: .whitespaces) + " near " + location.location)
-                .bold()
-                .padding(.vertical)
+            if location.waterbody == location.location {
+                Text("\(location.waterbody) (\(location.state))")
+                    .bold()
+                    .padding(.vertical)
+            } else {
+                Text("\(location.waterbody) near \(location.location), \(location.state)")
+                    .bold()
+                    .padding(.vertical)
+            }
 
             Section(footer: Text("© NOAA AHPS").font(.footnote).foregroundColor(.secondary).padding(.top)) {
                 NWSDataView(location: location)

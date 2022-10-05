@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160F828D28EDE45E0028DE11 /* gage-stations-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = 160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */; };
 		16A33A4128BE84BE00184052 /* FloodNoticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A4028BE84BE00184052 /* FloodNoticeApp.swift */; };
 		16A33A4328BE84BE00184052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A4228BE84BE00184052 /* ContentView.swift */; };
 		16A33A4528BE84C100184052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A33A4428BE84C100184052 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gage-stations-iOS.json"; sourceTree = "<group>"; };
 		16A33A3D28BE84BE00184052 /* FloodNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloodNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A33A4028BE84BE00184052 /* FloodNoticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodNoticeApp.swift; sourceTree = "<group>"; };
 		16A33A4228BE84BE00184052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				16A33A5228BE92CC00184052 /* GageLocation.swift */,
 				16A33A5028BE92AC00184052 /* GageLocations.swift */,
 				16A33A4428BE84C100184052 /* Assets.xcassets */,
+				160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */,
 				16A33A4E28BE926500184052 /* stream_gage_sites.json */,
 				16A33A4628BE84C100184052 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160F828D28EDE45E0028DE11 /* gage-stations-iOS.json in Resources */,
 				16A33A4F28BE926500184052 /* stream_gage_sites.json in Resources */,
 				16A33A4828BE84C100184052 /* Preview Assets.xcassets in Resources */,
 				16A33A4528BE84C100184052 /* Assets.xcassets in Resources */,
