@@ -12,7 +12,6 @@
 		16A33A4328BE84BE00184052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A4228BE84BE00184052 /* ContentView.swift */; };
 		16A33A4528BE84C100184052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A33A4428BE84C100184052 /* Assets.xcassets */; };
 		16A33A4828BE84C100184052 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A33A4728BE84C100184052 /* Preview Assets.xcassets */; };
-		16A33A4F28BE926500184052 /* stream_gage_sites.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A33A4E28BE926500184052 /* stream_gage_sites.json */; };
 		16A33A5128BE92AC00184052 /* GageLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5028BE92AC00184052 /* GageLocations.swift */; };
 		16A33A5328BE92CC00184052 /* GageLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5228BE92CC00184052 /* GageLocation.swift */; };
 		16A33A5528BE948D00184052 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A5428BE948D00184052 /* MainMapView.swift */; };
@@ -29,7 +28,6 @@
 		16A33A4228BE84BE00184052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16A33A4428BE84C100184052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16A33A4728BE84C100184052 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		16A33A4E28BE926500184052 /* stream_gage_sites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stream_gage_sites.json; sourceTree = "<group>"; };
 		16A33A5028BE92AC00184052 /* GageLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GageLocations.swift; sourceTree = "<group>"; };
 		16A33A5228BE92CC00184052 /* GageLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GageLocation.swift; sourceTree = "<group>"; };
 		16A33A5428BE948D00184052 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				16A33A5028BE92AC00184052 /* GageLocations.swift */,
 				16A33A4428BE84C100184052 /* Assets.xcassets */,
 				160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */,
-				16A33A4E28BE926500184052 /* stream_gage_sites.json */,
 				16A33A4628BE84C100184052 /* Preview Content */,
 			);
 			path = FloodNotice;
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				160F828D28EDE45E0028DE11 /* gage-stations-iOS.json in Resources */,
-				16A33A4F28BE926500184052 /* stream_gage_sites.json in Resources */,
 				16A33A4828BE84C100184052 /* Preview Assets.xcassets in Resources */,
 				16A33A4528BE84C100184052 /* Assets.xcassets in Resources */,
 			);

@@ -39,6 +39,34 @@ struct CurrentStatusView: View {
     }
 }
 
+struct LoadingView: View {
+    @State private var effectValue: Double = 1.0
+    
+    var body: some View {
+        Spacer()
+        Image(systemName: "drop.fill")
+            .resizable()
+            .scaledToFit()
+            .frame(width: UIScreen.main.bounds.width / 30)
+            .foregroundColor(.blue)
+            .shadow(radius: 3)
+            .overlay(
+                Image(systemName: "drop.fill")//Circle()
+                    .foregroundColor(.blue)
+                    .scaleEffect(effectValue)
+                    .opacity(2 - effectValue)
+                    .animation(
+                        .easeOut(duration: 1)
+                            .repeatForever(autoreverses: false),
+                            value: effectValue
+                    )
+            )
+            .onAppear {
+                effectValue = 2
+            }
+    }
+}
+
 struct FloodStagesView: View {
     var floodStages: [FloodLevel]
     
@@ -52,7 +80,7 @@ struct FloodStagesView: View {
                         Text("Flood Stages")
                     }
                     .font(.headline)
-                    ForEach(floodStages, id: \.stage) { item in
+                    ForEach(floodStages.filter{$0.gageHeight > 0}, id: \.stage) { item in
                         Text(item.stage == "flood" ? "Minor" : item.stage.capitalized)
                             .padding(.top)
                     }
@@ -63,8 +91,8 @@ struct FloodStagesView: View {
                         Text("Gage Height")
                     }
                     .font(.headline)
-                    ForEach(floodStages, id: \.stage) { item in
-                        Text(item.gageHeight == 0 ? "---" : String(format: "%.2f ft", item.gageHeight))
+                    ForEach(floodStages.filter{$0.gageHeight > 0}, id: \.stage) { item in
+                        Text(item.gageHeight == 0 ? "---" : String(format: "%.1f ft", item.gageHeight))
                             .padding(.top)
                     }
                 }
@@ -138,7 +166,10 @@ struct NWSDataView: View {
     var body: some View {
         VStack {
             if nwsData.isEmpty == true {
-                Text("Loading NWS AHPS Data")
+                LoadingView()
+                Text("Loading Data")
+                    .font(.footnote)
+                Spacer()
             } else {
                 // Current Status
                 CurrentStatusView(currentData: nwsData.first ?? XMLData.example)
@@ -208,7 +239,6 @@ struct NWSDataView: View {
                 // Forecast Data
                 await parseXMLData(dataType: "forecast", inputXML: xmlFeed["site"]["forecast"])
                 print("Forecast parsed")
-                print(nwsData)
             }
         } catch {
             print("Invalid data returned for " + nwsID)
@@ -253,13 +283,6 @@ struct NWSDataView: View {
                 let xmlPubDate = srcDateParser.date(from: child["valid"].element!.text)!
                 
                 if xmlGageHeight > -1 {
-                    /*
-                    if child.children.count <= 3 {
-                        let adjustedFlowRate = "---"
-                    }
-                    if child.children.count > 3 {
-                        let adjustedFlowRate = await formatFlowValue(inputValue: Double(child["secondary"].element!.text))
-                    }*/
                     nwsData.append(XMLData(
                         pubDateUNIX: xmlPubDate.timeIntervalSince1970,
                         pubDate: xmlPubDate,
