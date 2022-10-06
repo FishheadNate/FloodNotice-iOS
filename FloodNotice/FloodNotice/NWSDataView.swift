@@ -51,7 +51,7 @@ struct LoadingView: View {
             .foregroundColor(.blue)
             .shadow(radius: 3)
             .overlay(
-                Image(systemName: "drop.fill")//Circle()
+                Image(systemName: "drop.fill")
                     .foregroundColor(.blue)
                     .scaleEffect(effectValue)
                     .opacity(2 - effectValue)
@@ -71,7 +71,7 @@ struct FloodStagesView: View {
     var floodStages: [FloodLevel]
     
     var body: some View {
-        if floodStages.count == 0 {
+        if (floodStages.filter{$0.gageHeight > 0}).isEmpty == true {
             Text("Flood Stage Levels Unavailable")
         } else {
             HStack {
@@ -92,7 +92,7 @@ struct FloodStagesView: View {
                     }
                     .font(.headline)
                     ForEach(floodStages.filter{$0.gageHeight > 0}, id: \.stage) { item in
-                        Text(item.gageHeight == 0 ? "---" : String(format: "%.1f ft", item.gageHeight))
+                        Text(String(format: "%.1f ft", item.gageHeight))
                             .padding(.top)
                     }
                 }
@@ -166,9 +166,8 @@ struct NWSDataView: View {
     var body: some View {
         VStack {
             if nwsData.isEmpty == true {
+                Spacer()
                 LoadingView()
-                Text("Loading Data")
-                    .font(.footnote)
                 Spacer()
             } else {
                 // Current Status
@@ -217,8 +216,8 @@ struct NWSDataView: View {
     
     func loadData(nwsID: String, floodStages: Bool) async {
         let nwsID = nwsID.lowercased()
-        guard let url = URL(string: "https://water.weather.gov/ahps2/hydrograph_to_xml.php?output=xml&gage=" + nwsID) else {
-            print("Invalid URL for " + nwsID)
+        guard let url = URL(string: "https://water.weather.gov/ahps2/hydrograph_to_xml.php?output=xml&gage=\(nwsID)") else {
+            print("Invalid URL for \(nwsID)")
             return
         }
         
@@ -227,21 +226,16 @@ struct NWSDataView: View {
             
             if let xmlFeed = try? XMLHash.parse(NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String) {
                 // Flood Stage Levels
-                if floodStages == true {
-                    print("Using Flood Stages from source data")
-                } else {
+                if floodStages == false {
                     await parseFloodStages(inputXML: xmlFeed["site"]["sigstages"])
-                    print("Flood Stages parsed")
                 }
                 // Observed Data
                 await parseXMLData(dataType: "observed", inputXML: xmlFeed["site"]["observed"])
-                print("Observed parsed")
                 // Forecast Data
                 await parseXMLData(dataType: "forecast", inputXML: xmlFeed["site"]["forecast"])
-                print("Forecast parsed")
             }
         } catch {
-            print("Invalid data returned for " + nwsID)
+            print("Invalid data returned for \(nwsID)")
         }
         return
     }

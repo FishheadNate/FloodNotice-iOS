@@ -31,6 +31,8 @@ struct ContentView: View {
             Section(footer: Text("© NOAA AHPS").font(.footnote).foregroundColor(.secondary).padding(.top)) {
                 NWSDataView(gageStation: gageStation)
             }
+            
+            NeighboringGagesView(gageStation: gageStation)
         }
         .navigationBarTitle(Text(gageStation.nwsId))
     }

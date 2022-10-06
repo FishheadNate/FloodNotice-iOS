@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		160F828D28EDE45E0028DE11 /* gage-stations-iOS.json in Resources */ = {isa = PBXBuildFile; fileRef = 160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */; };
+		160F828F28EE912A0028DE11 /* NeighboringGagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F828E28EE912A0028DE11 /* NeighboringGagesView.swift */; };
 		16A33A4128BE84BE00184052 /* FloodNoticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A4028BE84BE00184052 /* FloodNoticeApp.swift */; };
 		16A33A4328BE84BE00184052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A33A4228BE84BE00184052 /* ContentView.swift */; };
 		16A33A4528BE84C100184052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A33A4428BE84C100184052 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		160F828C28EDE45D0028DE11 /* gage-stations-iOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gage-stations-iOS.json"; sourceTree = "<group>"; };
+		160F828E28EE912A0028DE11 /* NeighboringGagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighboringGagesView.swift; sourceTree = "<group>"; };
 		16A33A3D28BE84BE00184052 /* FloodNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloodNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A33A4028BE84BE00184052 /* FloodNoticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodNoticeApp.swift; sourceTree = "<group>"; };
 		16A33A4228BE84BE00184052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				16A33A5828BE95AD00184052 /* GageMapView.swift */,
 				16EA011628CBB2250001D47C /* NWSDataView.swift */,
 				16A33A4228BE84BE00184052 /* ContentView.swift */,
+				160F828E28EE912A0028DE11 /* NeighboringGagesView.swift */,
 				16A33A5228BE92CC00184052 /* GageLocation.swift */,
 				16A33A5028BE92AC00184052 /* GageLocations.swift */,
 				16A33A4428BE84C100184052 /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A33A4328BE84BE00184052 /* ContentView.swift in Sources */,
+				160F828F28EE912A0028DE11 /* NeighboringGagesView.swift in Sources */,
 				16A33A5728BE953A00184052 /* MainListView.swift in Sources */,
 				16EA011728CBB2250001D47C /* NWSDataView.swift in Sources */,
 				16A33A5128BE92AC00184052 /* GageLocations.swift in Sources */,
