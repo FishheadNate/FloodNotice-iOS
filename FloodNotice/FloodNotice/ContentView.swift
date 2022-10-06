@@ -13,10 +13,14 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView {
-            GageMapView(gageStation: gageStation)
-                .frame(width: 200, height: 200, alignment: .center)
-                .cornerRadius(5)
-                .clipShape(Circle())
+            ZStack(alignment: .center) {
+                GageMapView(gageStation: gageStation)
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .cornerRadius(5)
+                    .clipShape(Circle())
+                
+                NeighboringGagesView(gageStation: gageStation)
+            }
             
             if gageStation.waterbody == gageStation.location {
                 Text("\(gageStation.waterbody) (\(gageStation.state))")
@@ -31,8 +35,6 @@ struct ContentView: View {
             Section(footer: Text("© NOAA AHPS").font(.footnote).foregroundColor(.secondary).padding(.top)) {
                 NWSDataView(gageStation: gageStation)
             }
-            
-            NeighboringGagesView(gageStation: gageStation)
         }
         .navigationBarTitle(Text(gageStation.nwsId))
     }
