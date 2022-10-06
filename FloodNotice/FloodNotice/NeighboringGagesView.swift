@@ -52,10 +52,9 @@ struct NeighborsView: View {
 }
 
 struct NeighboringGagesView: View {
+    @EnvironmentObject var gageStations: GageLocations
     @State var gageStation: GageLocation
-    //@State private var neighboringGages = [Feature]()
     @State private var queryResults = [Feature]()
-    //
     @State private var upstreamGages: [String] = []
     @State private var upstreamGage: String = "00000000"
     
@@ -67,7 +66,7 @@ struct NeighboringGagesView: View {
             
         }.task {
             await loadData(usgsID: gageStation.usgsID, navigationMode: "UM")
-            await sortNeighbors(neighbors: upstreamGages, upstream: true)
+            await sortNeighbors(neighbors: upstreamGages, upstream: true, inventory: gageStations.inventory)
         }
     }
     
@@ -97,11 +96,13 @@ struct NeighboringGagesView: View {
         return
     }
     
-    func sortNeighbors(neighbors: [String], upstream: Bool) async {
+    func sortNeighbors(neighbors: [String], upstream: Bool, inventory: [String]) async {
         let upstreamSorted = neighbors.sorted{$0 < $1}
         print("=============")
-        for i in upstreamSorted {
-            print(i)
+        for gage in upstreamSorted {
+            print(gage)
+            let gageStatus = inventory.contains(gage) == true ? String("\(gage) (found in database)") : gage
+            print(gageStatus)
         }
         print("=============")
     }
@@ -112,18 +113,3 @@ struct NeighboringGagesView_Previews: PreviewProvider {
         NeighboringGagesView(gageStation: GageLocation.example)
     }
 }
-
-
-/*
- func sortNeighbors(usgsID: String, neighbors: [Feature], upstream: Bool) async {
-     if upstream == true {
-         var upstreamSorted = neighbors.sorted{$0.properties.identifier > $1.properties.identifier}
-         upstreamSorted.removeAll(where: {$0.properties.identifier == "USGS-\(usgsID)"})
-         print("=============")
-         for i in upstreamSorted {
-             print(i.properties.identifier)
-         }
-         print("=============")
-     }
- }
- */
