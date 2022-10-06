@@ -25,20 +25,6 @@ struct XMLData: Codable {
     static let example = XMLData(pubDateUNIX: Date.now.timeIntervalSince1970, pubDate: Date.now, gageHeight: -1, flowRate: "-*-", observed: false)
 }
 
-struct CurrentStatusView: View {
-    var currentData: XMLData
-    
-    var body: some View {
-        if currentData.gageHeight < 0 && currentData.flowRate == "---" {
-            Text("Currrent Status Unavailable")
-        } else if currentData.gageHeight > 0 && currentData.flowRate == "---" {
-            Text("Currrent Status: \(String(format: "%.2f ft", currentData.gageHeight))")
-        } else {
-            Text("Currrent Status: \(String(format: "%.2f ft", currentData.gageHeight)) (\(currentData.flowRate))")
-        }
-    }
-}
-
 struct LoadingView: View {
     @State private var effectValue: Double = 1.0
     
@@ -64,6 +50,20 @@ struct LoadingView: View {
             .onAppear {
                 effectValue = 2
             }
+    }
+}
+
+struct CurrentStatusView: View {
+    var currentData: XMLData
+    
+    var body: some View {
+        if currentData.gageHeight < 0 && currentData.flowRate == "---" {
+            Text("Currrent Status Unavailable")
+        } else if currentData.gageHeight > 0 && currentData.flowRate == "---" {
+            Text("Currrent Status: \(String(format: "%.2f ft", currentData.gageHeight))")
+        } else {
+            Text("Currrent Status: \(String(format: "%.2f ft", currentData.gageHeight)) (\(currentData.flowRate))")
+        }
     }
 }
 
