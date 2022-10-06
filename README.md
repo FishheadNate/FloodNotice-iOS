@@ -53,8 +53,7 @@ flowchart LR
 
 ## Demo
 
-![Simulator Screen Recording - iPhone 11 - 2022-10-05 at 15 53 21](https://user-images.githubusercontent.com/22895187/194162318-467272bc-2886-44df-85a1-4b9be2b539c0.gif)
-
+![Simulator Screen Recording - iPhone 14 Pro - 2022-10-06 at 14 30 40](https://user-images.githubusercontent.com/22895187/194402589-4bbc945a-f5f1-4570-becb-5f4135057580.gif)
 
 ---
 
