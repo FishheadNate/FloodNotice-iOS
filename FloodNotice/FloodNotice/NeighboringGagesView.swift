@@ -55,7 +55,7 @@ struct JumpToNeighborView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: frameWidth)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
                     .opacity(0.75)
                     .shadow(radius: 3)
                     .rotationEffect(.degrees(rotateDegrees))
@@ -75,7 +75,7 @@ struct JumpToNeighborView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: frameWidth)
-                .opacity(0)
+                .foregroundColor(.clear)
         }
     }
 }

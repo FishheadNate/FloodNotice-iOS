@@ -33,7 +33,7 @@ struct MainMapView: View {
                 NavigationLink(destination: ContentView(gageStation: gageStation)) {
                     Image(systemName: "drop.fill")
                         .resizable()
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
                         .shadow(radius: 3)
                 }
             }

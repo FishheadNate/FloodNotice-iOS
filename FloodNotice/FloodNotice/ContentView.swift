@@ -15,9 +15,9 @@ struct ContentView: View {
         ScrollView {
             ZStack(alignment: .center) {
                 GageMapView(gageStation: gageStation)
-                    .frame(width: 200, height: 200, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
                     .cornerRadius(5)
-                    .clipShape(Circle())
+                    .clipShape(Rectangle())
                 
                 NeighboringGagesView(gageStation: gageStation)
             }
@@ -25,10 +25,12 @@ struct ContentView: View {
             if gageStation.waterbody == gageStation.location {
                 Text("\(gageStation.waterbody) (\(gageStation.state))")
                     .bold()
+                    .lineLimit(1)
                     .padding(.vertical)
             } else {
                 Text("\(gageStation.waterbody) near \(gageStation.location), \(gageStation.state)")
                     .bold()
+                    .lineLimit(1)
                     .padding(.vertical)
             }
 

@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct FloodNoticeApp: App {
     @StateObject var locations = GageLocations()
-    //@StateObject var stationIDs = StationCrosswalk()
     
     var body: some Scene {
         WindowGroup {

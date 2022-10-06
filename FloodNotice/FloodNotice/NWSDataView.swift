@@ -34,11 +34,11 @@ struct LoadingView: View {
             .resizable()
             .scaledToFit()
             .frame(width: UIScreen.main.bounds.width / 30)
-            .foregroundColor(.blue)
+            .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
             .shadow(radius: 3)
             .overlay(
                 Image(systemName: "drop.fill")
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
                     .scaleEffect(effectValue)
                     .opacity(2 - effectValue)
                     .animation(
@@ -74,7 +74,7 @@ struct FloodStagesView: View {
         if (floodStages.filter{$0.gageHeight > 0}).isEmpty == true {
             Text("Flood Stage Levels Unavailable")
         } else {
-            HStack {
+            HStack(alignment: .center) {
                 LazyVGrid(columns: [GridItem(.flexible())], alignment: .leading, spacing: 0) {
                     Group {
                         Text("Flood Stages")
@@ -173,13 +173,13 @@ struct NWSDataView: View {
                 // Current Status
                 CurrentStatusView(currentData: nwsData.first ?? XMLData.example)
                 Divider()
-                    .padding()
+                    .padding(.bottom)
             
                 // Flood Stages
                 FloodStagesView(floodStages: sigFloodStages)
                     .padding()
                 Divider()
-                    .padding()
+                    .padding(.bottom)
             
                 // Observations
                 Text("Recent Observations")
