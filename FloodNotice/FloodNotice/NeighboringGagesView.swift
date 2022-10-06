@@ -39,14 +39,12 @@ struct Properties: Decodable {
     let mainstem: String
 }
 
-struct NeighborsView: View {
-    var neighbors: [Feature]
-    var upstream: Bool
+struct JumpToNeighborView: View {
+    var neighbor: String
     
     var body: some View {
         HStack {
-            Text("Downstream")
-            Text("Upstream")
+            Text("Neighbor: \(neighbor)")
         }
     }
 }
@@ -55,56 +53,53 @@ struct NeighboringGagesView: View {
     @EnvironmentObject var gageStations: GageLocations
     @State var gageStation: GageLocation
     @State private var queryResults = [Feature]()
-    @State private var upstreamGages: [String] = []
-    @State private var upstreamGage: String = "00000000"
+    @State private var upstreamGage: String = "USGS-99999999"
+    @State private var downstreamGage: String = "USGS-99999999"
     
     var body: some View {
         VStack {
             Text("Neighboring Gage Stations")
          
-            NeighborsView(neighbors: queryResults, upstream: true)
+            JumpToNeighborView(neighbor: String(upstreamGage.dropFirst(5)))
             
         }.task {
             await loadData(usgsID: gageStation.usgsID, navigationMode: "UM")
-            await sortNeighbors(neighbors: upstreamGages, upstream: true, inventory: gageStations.inventory)
+            await loadData(usgsID: gageStation.usgsID, navigationMode: "DM")
         }
     }
     
     func loadData(usgsID: String, navigationMode: String) async {
-        guard let queryURL = URL(string: "https://labs.waterdata.usgs.gov/api/nldi/linked-data/nwissite/USGS-\(usgsID)/navigation/\(navigationMode)/nwissite?f=json&distance=50") else {
+        var neighborsGages: [String] = []
+        
+        guard let queryURL = URL(string: "https://labs.waterdata.usgs.gov/api/nldi/linked-data/nwissite/USGS-\(usgsID)/navigation/\(navigationMode)/nwissite?f=json&distance=100") else {
             print("Invalid URL")
             return
         }
         
         do {
             let (data, _) = try await URLSession.shared.data(from: queryURL)
-            
             if let jsonFeed = try? JSONDecoder().decode(NLDIResults.self, from: data) {
-                DispatchQueue.main.async {
-                    queryResults = jsonFeed.features
-                    queryResults.removeAll(where: {$0.properties.identifier == "USGS-\(usgsID)"})
-                    
-                    for item in queryResults {
-                        let neighborID = String(item.properties.identifier.dropFirst(5))
-                        upstreamGages.append(neighborID)
-                    }
+                queryResults = jsonFeed.features
+                //queryResults.removeAll(where: {$0.properties.identifier == "USGS-\(gageStation.usgsID)"})
+                print("Features count: \(queryResults.count) for \(usgsID)")
+                queryResults.forEach { item in
+                    neighborsGages.append(String(item.properties.identifier))
                 }
+                neighborsGages.removeAll(where: {$0 == "USGS-\(gageStation.usgsID)"})
+                
+                if navigationMode == "UM" {
+                    upstreamGage = neighborsGages.sorted{$0 > $1}.first(where: {gageStations.inventory.contains($0)}) ?? "USGS-00000000"
+                }
+                print("Upstream: \(upstreamGage)")
+                
+                if navigationMode == "DM" {
+                    downstreamGage = neighborsGages.sorted{$0 < $1}.first(where: {gageStations.inventory.contains($0)}) ?? "USGS-00000000"
+                }
+                print("Downstream: \(downstreamGage)")
             }
         } catch {
             print("Invalid data returned")
         }
-        return
-    }
-    
-    func sortNeighbors(neighbors: [String], upstream: Bool, inventory: [String]) async {
-        let upstreamSorted = neighbors.sorted{$0 < $1}
-        print("=============")
-        for gage in upstreamSorted {
-            print(gage)
-            let gageStatus = inventory.contains(gage) == true ? String("\(gage) (found in database)") : gage
-            print(gageStatus)
-        }
-        print("=============")
     }
 }
 

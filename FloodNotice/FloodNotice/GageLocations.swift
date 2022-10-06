@@ -20,7 +20,7 @@ class GageLocations: ObservableObject {
         places = try! JSONDecoder().decode([GageLocation].self, from: data)
         
         for place in places {
-            inventory.append(place.usgsID)
+            inventory.append("USGS-\(place.usgsID)")
         }
     }
 }
