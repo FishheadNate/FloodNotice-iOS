@@ -11,11 +11,16 @@ import Foundation
 
 class GageLocations: ObservableObject {
     var places: [GageLocation]
+    var inventory: [String] = []
     
     init() {
-        let url = Bundle.main.url(forResource: "stream_gage_sites",
+        let url = Bundle.main.url(forResource: "gage-stations-iOS",
                                   withExtension: "json")!
         let data = try! Data(contentsOf: url)
         places = try! JSONDecoder().decode([GageLocation].self, from: data)
+        
+        for place in places {
+            inventory.append("USGS-\(place.usgsID)")
+        }
     }
 }

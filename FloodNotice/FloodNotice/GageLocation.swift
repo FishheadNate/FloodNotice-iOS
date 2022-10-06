@@ -11,11 +11,19 @@ import Foundation
 struct GageLocation: Decodable, Identifiable {
     let id: Int
     let nwsId: String
-    let waterbody: String
     let location: String
-    let nwsURL: String
     let latitude: Double
     let longitude: Double
+    let waterbody: String
+    let state: String
+    let action: Double
+    let flood: Double
+    let moderate: Double
+    let major: Double
+    let lowThreshold: Double
+    let usgsID: String
+    let siteType: String
+    let floodStages: String
     
-    static let example = GageLocation(id: 0, nwsId: "wtto2", waterbody: "Example River", location: "Example City, AA", nwsURL: "https://water.weather.gov/ahps2/hydrograph.php?wfo=tsa&gage=wtto2", latitude: -91.5529, longitude: 37.3756)
+    static let example = GageLocation(id: 1, nwsId: "WTTO2", location: "Example City", latitude: 37.3756, longitude: -91.5529, waterbody: "Example River", state: "AA", action: 4.0, flood: 7.0, moderate: 14.0, major: 20.0, lowThreshold: 1.1, usgsID: "07195500", siteType: "surface water", floodStages: "y")
 }

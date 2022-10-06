@@ -10,29 +10,29 @@ import MapKit
 import SwiftUI
 
 struct GageMapView: View {
-    @State var location: GageLocation
+    @State var gageStation: GageLocation
     
     var body: some View {
         let gageRegion = MKCoordinateRegion(
             center:
                 CLLocationCoordinate2D(latitude:
-                location.latitude, longitude:
-                location.longitude),
+                gageStation.latitude, longitude:
+                gageStation.longitude),
             span: MKCoordinateSpan(
                 latitudeDelta: 0.01,
                 longitudeDelta: 0.01)
         )
         
         Map(coordinateRegion: .constant(gageRegion),
-            annotationItems: [location]
-        ) { location in
+            annotationItems: [gageStation]
+        ) { gageStation in
             MapAnnotation(coordinate:
                 CLLocationCoordinate2D(latitude:
-                location.latitude, longitude:
-                location.longitude)) {
+                gageStation.latitude, longitude:
+                gageStation.longitude)) {
                     Image(systemName: "drop.fill")
                         .resizable()
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
                         .shadow(radius: 3)
             }
             
@@ -42,6 +42,6 @@ struct GageMapView: View {
 
 struct GageMapView_Previews: PreviewProvider {
     static var previews: some View {
-        GageMapView(location: GageLocation.example)
+        GageMapView(gageStation: GageLocation.example)
     }
 }

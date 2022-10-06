@@ -9,29 +9,41 @@ import MapKit
 import SwiftUI
 
 struct ContentView: View {
-    let location: GageLocation
-
+    let gageStation: GageLocation
+    
     var body: some View {
         ScrollView {
-            GageMapView(location: location)
-                .frame(width: 200, height: 200, alignment: .center)
-                .cornerRadius(5)
-                .clipShape(Circle())
+            ZStack(alignment: .center) {
+                GageMapView(gageStation: gageStation)
+                    .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
+                    .cornerRadius(5)
+                    .clipShape(Rectangle())
+                
+                NeighboringGagesView(gageStation: gageStation)
+            }
             
-            Text(location.waterbody.trimmingCharacters(in: .whitespaces) + " near " + location.location)
-                .bold()
-                .padding(.vertical)
+            if gageStation.waterbody == gageStation.location {
+                Text("\(gageStation.waterbody) (\(gageStation.state))")
+                    .bold()
+                    .lineLimit(1)
+                    .padding(.vertical)
+            } else {
+                Text("\(gageStation.waterbody) near \(gageStation.location), \(gageStation.state)")
+                    .bold()
+                    .lineLimit(1)
+                    .padding(.vertical)
+            }
 
             Section(footer: Text("© NOAA AHPS").font(.footnote).foregroundColor(.secondary).padding(.top)) {
-                NWSDataView(location: location)
+                NWSDataView(gageStation: gageStation)
             }
         }
-        .navigationBarTitle(Text(location.nwsId))
+        .navigationBarTitle(Text(gageStation.nwsId))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(location: GageLocation.example)
+        ContentView(gageStation: GageLocation.example)
     }
 }

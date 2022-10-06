@@ -10,7 +10,7 @@ import MapKit
 import SwiftUI
 
 struct MainMapView: View {
-    @EnvironmentObject var locations: GageLocations
+    @EnvironmentObject var gageStations: GageLocations
     
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -23,17 +23,17 @@ struct MainMapView: View {
     
     var body: some View {
         Map(coordinateRegion: $region,
-            annotationItems: locations.places) {
-            location in
+            annotationItems: gageStations.places) {
+            gageStation in
             MapAnnotation(coordinate:
                 CLLocationCoordinate2D(latitude:
-                location.latitude, longitude:
-                location.longitude)) {
+                    gageStation.latitude, longitude:
+                    gageStation.longitude)) {
                 
-                NavigationLink(destination: ContentView(location: location)) {
+                NavigationLink(destination: ContentView(gageStation: gageStation)) {
                     Image(systemName: "drop.fill")
                         .resizable()
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 1.0))
                         .shadow(radius: 3)
                 }
             }
