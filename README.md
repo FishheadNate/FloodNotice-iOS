@@ -34,10 +34,10 @@ flowchart LR
     parseXML --> observations[(<br>Observations)]
     parseXML --> forecast[(<br>Forecast)]
     
-    floodStages --> sgv3(Gage heights for Flood Stages)
-    observations --> sgv4(Most recent observation)
-    observations --> sgv5(Stream flow trend & forecast)
-    forecast --> sgv5
+    observations --> sgv3(Current Stream Flow Status)
+    floodStages --> sgv4(Gage heights for Flood Stages)
+    observations --> sgv5(Most recent observation)
+    forecast --> sgv6(Stream flow forecast)
     
     subgraph Stream Gage View
     sgv1
@@ -45,6 +45,7 @@ flowchart LR
     sgv3
     sgv4
     sgv5
+    sgv6
     end
 ```
 
@@ -52,7 +53,8 @@ flowchart LR
 
 ## Demo
 
-![Simulator Screen Recording - iPhone 11 - 2022-09-01 at 03 45 18](https://user-images.githubusercontent.com/22895187/187872425-b5f2f620-d91c-4a02-bc88-cd8eb7478260.gif)
+![Simulator Screen Recording - iPhone 11 - 2022-10-05 at 15 53 21](https://user-images.githubusercontent.com/22895187/194162318-467272bc-2886-44df-85a1-4b9be2b539c0.gif)
+
 
 ---
 
