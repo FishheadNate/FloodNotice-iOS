@@ -1,5 +1,9 @@
 # FloodNotice-iOS
-SwiftUI based app to view USGS Stream Gage stations locations and the National Weather Service's Advanced Hydrologic Prediction Service output for each station.
+Swift based iOS app to view stream gages with coverage by the National Weather Service's Advanced Hydrologic Prediction Service.
+
+<img src='https://github.com/FishheadNate/FloodNotice-iOS/blob/main/samples/main_map.png' width='300'><img src='https://github.com/FishheadNate/FloodNotice-iOS/blob/main/samples/list_view.png' width='300'>
+
+<img src='https://github.com/FishheadNate/FloodNotice-iOS/blob/main/samples/gage_view_1.png' width='300'><img src='https://github.com/FishheadNate/FloodNotice-iOS/blob/main/samples/gage_view_2.png' width='300'>
 
 ## Overview
 
